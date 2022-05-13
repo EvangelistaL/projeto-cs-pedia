@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <title>CS:PEDIA | Home</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><b>Home</b></a>
+            <a href="">Login</a>
+            <a href="">Cadastro</a>
+        </nav>
+    </header>
+
+    <div id="imagem_inicial">
+            <div class="item"><img src="imagens/de_dust2.webp" alt=""></div>
+            <div class="item"><img src="imagens/de_mirage.jpg" alt=""></div>
+            <div class="item"><img src="imagens/de_nuke.webp" alt=""></div>
+            <div class="item"><img src="imagens/de_overpass.webp" alt=""></div>
+    </div>
+    <section id="cspedia">
+        <b>Se cadastre e tenha informações estátisticas sobre o jogo</b>
+        <img src="./imagens/webSite_logo.png" alt="webSite_logo" height="120px" width="550px">
+        <h2>O site sobre CS</h2>
+    </section>
+
+    <div id="sobre_site">
+        <h2>Sobre o CS:PEDIA</h2>
+        <p>O CS:PEDIA é um site de informações sobre CS. Ao realizar o cadastro você terá acesso a informações estátisticas sobre
+            as armas do jogo.
+        </p>
+    </div>
+
+    <div id="box">
+        <div id="sobre_jogo_box">
+            <h2>O que é o CS?</h2>
+            <p>O Counter Strike surgiu no final dos anos 90 como um mod do jogo Half-Life e não demorou para
+                se tornar um jogo a parte. <br>
+                O jogo funciona como se fosse um "policia e ladrão", onde o objetivo do lado terrorista (TR)
+                é plantar a bomba para que ela exploda e o lado contra-terrorista (CT) proteje o bombsite 
+                (área que o terrorista planta a bomba). <br>
+                Em 2004 foi lançado o Counter Strike Source, com a engine source do Half-Life 2 e atualmente o
+                CS está na versão Counter-strike Global Ofensive (CS:GO lançado em 2013) e o nome CS é reconhecido
+                mundialmente e possui 22 anos.
+            </p>
+        </div>
+        <img src="/imagens/cs-16_img.webp" alt="cs_16" width="400"></img>
+    </div>
+
+    <div id="box">
+        <div id="comp_box">
+            <h2>Competitivo e o CS no Brasil</h2>
+            <p>O counter-strike no Brasil é muito famoso e todo mundo teve um irmão mais velho que jogou o 
+            classico CS 1.6. Muitos não sabem mas nosso pais possui 3 mundiais 1 um vice-mundial de CS.
+            O vice campeonato foi conquistado por um time feminino chamado Ladies (Lokinha, Cookie, Le, bruinita e SaKuRa)
+            no campeonato ESWC 2004 Women.
+            Em 2006 veio o primeiro mundial para o Brasil conquistado pelo MIBR (cogu, nak, el, KIKO e fnx). Esse título
+            consagrou o Brasil no cenário mundial e após esse título vieram outros títulos de campeonatos de nível internacional,
+            mas nenhum sendo o 'Major' (como são nomeados os campeonatos mundiais de CS).
+            Em 2015 o Brasil retorna ao cenário mundial agora no CS:GO, só que somente em 2016 (10 anos após o primeiro título)
+            eles conquistaram o segundo mundial do Brasil com o time Luminosity (Fer, Fallen, TACO, fnx e coldzera). Esse campeonato
+            ficou marcado com uma jogada lendária do coldzera que ganhou um grafite no mapa do jogo, onde ele realizou essa jogada.
+            E o terceiro mundial veio no mesmo ano com o mesmo time no mesmo ano, porém como SK que é um time lendário no CS que decidiu
+            contratar os jogadores brasileiros e a partir daí o brasil dominou o cenário de CS mundial sendo o melhor time do mundo em 2016 e 2017,
+            alcaçando um marco histórico de 6 meses invictos no mapa de_train.
+            </p>
+        </div>
+        <img src="imagens/sk_major.jpeg" alt="cs_br" width="450"></img>
+    </div>
+
+    <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
+</body>
+</html>
+
+<script>
+    document.querySelector('#imagem_inicial').addEventListener('wheel',
+    event => {
+        if(event.deltaY > 0){
+            event.target.scrollBy(300, 0)
+        } else {
+            event.target.scrollBy(-300,0)
+        }
+    })
+</script>

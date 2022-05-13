@@ -1,0 +1,119 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    background-color: #263764;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0c0f12;
+    height: 100px;
+}
+
+header nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    font-size: 18px;
+    color: #de9b35;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 10%;
+}
+
+#imagem_inicial {
+    display: flex;
+    width: 100vw;
+    border-bottom: #0c0f12 solid 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.item{
+    flex: none;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+#cspedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.255);
+    border-radius: 25px;
+    width: 50%;
+    position: absolute;
+    z-index: 99;
+    bottom: 200px;
+    left: 25%;
+}
+
+#sobre_site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c0f12;
+    color: #de9b35;
+    width: 33%;
+    padding-left: 1%;
+    margin-top: 5%;
+    margin-left: 33%;
+    border-radius: 20px;
+    box-shadow: 12px 12px 12px #0c0f12;
+}
+
+#box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #de9b35;
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: #0c0f12;
+    border-radius: 20px;
+    width: 95%;
+    box-shadow: 12px 12px 12px #0c0f12;
+}
+
+#box h2 {
+    margin-left: 5%;
+}
+
+#box p {
+    width: 85%;
+    margin-left: 2%;
+}
+
+#box img {
+    padding-right: 100px;
+    border-radius: 50px;
+}
+
+footer {
+    display: flex;
+    color: #de9b35;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 200px;
+    background-color: #0c0f12;
+}
+
+footer p {
+    border-bottom: solid 2px #de9b35;
+}
