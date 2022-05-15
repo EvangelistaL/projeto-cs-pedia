@@ -4,13 +4,13 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto Flex', sans-serif;
     margin: 0;
-    background-color: #263764;
+    background-color: #121930;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #0c0f12;
     height: 100px;
 }
@@ -20,7 +20,14 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    margin-right: 5%;
+}
+header img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 50px;
+    margin-left: 5%;
 }
 
 a {
