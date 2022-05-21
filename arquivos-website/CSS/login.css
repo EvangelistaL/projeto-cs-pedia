@@ -38,7 +38,7 @@ a {
 }
 
 #form {
-    background-image: url(/imagens/login_background.jpg);
+    background-image: url(../imagens/login_background.jpg);
     background-repeat: no-repeat;
     height: 135%;
     display: flex;
