@@ -110,6 +110,10 @@
             <h4>Glock-18</h4>
             <img src="./imagens/g18png.webp" alt="g18_png" id="g18" onclick="mostrarDados('g18', 'infoGlock')">
         </section>
+        <section>
+            <h4>R8 Revolver</h4>
+            <img src="./imagens/r8png.webp" alt="r8_png" id="g18" onclick="mostrarDados('r8', 'infoR8')">
+        </section>
     </div>
     </div>
 
@@ -184,7 +188,7 @@
     </div>
 
     <!-- Rifles -->
-    <div id="infoAk" class="info" style="display: flex;">
+    <div id="infoAk" class="info" style="display: none;">
         <h1>AK-47</h1>
         <section class="macro_info">
             <p><b>Valor:</b> $2700</p>
@@ -196,8 +200,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="akChart" width="400" height="400" style="display: block;"></canvas>
-                <canvas id="akChart2" width="400" height="400" style="display: block;"></canvas>
+                <canvas id="akChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="akChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O AK-47, ou AK como é oficialmente conhecida, também conhecida como Kalashnikov, é um fuzil de assalto de calibre 7,62x39mm 
@@ -225,8 +229,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="m4sChart"></canvas>
-                <canvas id="m4sChart2"></canvas>
+                <canvas id="m4sChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="m4sChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A carabina M4 é uma variante mais curta e mais leve do rifle M16A2. A M4 é uma carabina alimentada com um carregador de 25 munições no calibre 5,56×45mm NATO, inventada pela Colt.<br>
@@ -251,8 +255,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="m4Chart"></canvas>
-                <canvas id="m4Chart2"></canvas>
+                <canvas id="m4Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="m4Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A carabina M4 é uma variante mais curta e mais leve do rifle M16A2. A M4 é uma carabina alimentada com um carregador de 25 munições no calibre 5,56×45mm NATO, inventada pela Colt.<br>
@@ -276,8 +280,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="awpChart"></canvas>
-                <canvas id="awpChart2"></canvas>
+                <canvas id="awpChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="awpChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O Arctic Warfare Magnum é uma das plataformas de fuzil de precisão mais utilizadas no mundo, especialmente pelos países do grupo G7. Foi desenvolvido pela empresa britânica Accuracy International
@@ -288,6 +292,8 @@
                 Uma curiosidade é que o jogador brasileiro Cogu (considerado o melhor jogador da versão 1.6) revolucionou a maneira de se jogar de AWP. Ele jogava de maneira agressiva na época encurtando a distância
                 nas gun fights com a awp. Essa maneira de se jogar se permanece até hoje entre os jogadores de AWP. 
             </p>
+            <h3>Video guia da arma com o verdadeiro:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gHPPAdS3o4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div id="infoGalil" class="info" style="display: none;">
         <h1>Galil AR</h1>
@@ -301,8 +307,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="galilChart"></canvas>
-                <canvas id="galilChart2"></canvas>
+                <canvas id="galilChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="galilChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p> O Galil AR é uma ver posterior ao Galil ACE 22, um fuzil israelita produzido pela Israel Weapon Industries.
@@ -324,12 +330,12 @@
             <p><b>Dano:</b> Médio</p>
             <p><b>Alcance:</b> Alto</p>
             <p><b>Lado da compra:</b>CT</p>
-            <p><b>Rate of fire:</b> 666 RPM (Auto) / 800 RPM (Burst)</p>
+            <p><b>Rate of fire:</b> 666 (Auto)/800 RPM(Burst)</p>
         </section>
 
             <div id="gunGraph">
-                <canvas id="galilChart"></canvas>
-                <canvas id="galilChart2"></canvas>
+                <canvas id="famasChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="famasChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>FAMAS é um fuzil de assalto de origem francesa, desenvolvido e fabricado pela MAS em 1978, e atualmente 
@@ -355,8 +361,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="sg553Chart"></canvas>
-                <canvas id="sg553Chart2"></canvas>
+                <canvas id="sg553Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="sg553Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O SG 553 é um fuzil de assalto fabricado pela Swiss Arms AG (anteriormente uma divisão da Schweizerische Industrie 
@@ -385,8 +391,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="augChart"></canvas>
-                <canvas id="augChart2"></canvas>
+                <canvas id="augChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="augChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O Steyr AUG é um fuzil de assalto bullpup 5,56×45mm NATO austríaco, projetado nos anos 60 pela Steyr-Daimler-Puch 
@@ -413,8 +419,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="g3Chart"></canvas>
-                <canvas id="g3Chart2"></canvas>
+                <canvas id="g3Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="g3Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Gewehr 3 (G3) (em alemão: Gewehr 3, lit. "Fuzil 3") é uma espingarda de combate de fogo selectivo usada nos Exercitos Português e Brasileiro,
@@ -443,8 +449,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="scarChart"></canvas>
-                <canvas id="scarChart2"></canvas>
+                <canvas id="scarChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="scarChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O FN SCAR é construído para ser extremamente modular, incluindo mudança de cano para alternar entre calibres. 
@@ -475,8 +481,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="scoutChart"></canvas>
-                <canvas id="scoutChart2"></canvas>
+                <canvas id="scoutChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="scoutChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O Steyr SSG 08 é um rifle de precisão austríaco desenvolvido e produzido por Steyr Mannlicher. O rifle é mais uma evolução do rifle sniper SSG 04 de Steyr. <br>
@@ -499,12 +505,12 @@
             <p><b>Dano:</b> Médio</p>
             <p><b>Alcance:</b> Médio/Alto</p>
             <p><b>Lado da compra:</b>CT ou TR</p>
-            <p><b>Rate of fire:</b> 400 RPM (Rounds per minute)</p>
+            <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
             <div id="gunGraph">
-                <canvas id="p250Chart"></canvas>
-                <canvas id="p250Chart2"></canvas>
+                <canvas id="p250Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="p250Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A SIG Sauer P250 é uma pistola semiautomática fabricada pela Sigarms. Introduzida em 2007, a SIG P250 foi fabricada nos calibres: .22 Long Rifle, .380 ACP, 9×19mm Parabellum, .357 SIG, .40 S&W e .45 ACP.<br>
@@ -519,7 +525,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/x65XMC3CSRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div id="infoCz75" class="info" style="display: none;">
-        <h1>P250</h1>
+        <h1>CZ75-Auto</h1>
         <section class="macro_info">
             <p><b>Valor:</b> $500</p>
             <p><b>Munição</b> 12/12</p>
@@ -530,11 +536,11 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="cz75Chart"></canvas>
-                <canvas id="cz75Chart2"></canvas>
+                <canvas id="cz75Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="cz75Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
-            <p>A CZ 75 é uma pistola produzida pela fabricante de armas de fogo checa ČZUB. Introduzida pela primeira vez em 1975, é uma das "wonder nines" originais e apresenta um carregador bifilar,
+            <p>A CZ75 é uma pistola produzida pela fabricante de armas de fogo checa ČZUB. Introduzida pela primeira vez em 1975, é uma das "wonder nines" originais e apresenta um carregador bifilar,
                 construção toda em aço e um cano forjado a martelo.<br>
                 No jogo, a CZ75 é uma das opções para a Five-SeveN no lado CT e para a Tec-9 no lado TR. Pode ser selecionada para substituir uma das duas no menu de compra.<br>
                 É a unica pistola full-auto do jogo, em uma época ela era muito poderosa por possuir muitas munições, porém hoje em dia ela possui apenas 24 tiros (12 no carregador e 12 na reserva)
@@ -558,13 +564,13 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="dualChart"></canvas>
-                <canvas id="dualChart2"></canvas>
+                <canvas id="dualChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="dualChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Beretta é uma pistola, de origem italiana, calibre 9×19mm Parabellum usada como a arma secundária oficial das forças armadas dos Estados Unidos desde 1985. É essencialmente uma especificação militar da Beretta 92FS.<br>
                 No jogo, as Berettas Duplas são moderavelmente fortes no meio das pistolas semi-automaticas. Originalmente ela era disponível do lado dos terroristas, mas no lançamento do CS:GO elas eram disponíveis dos dois lados.
-                No CS:GO, elas custavam $400 até 26 de setembro de 2017 e nos dias de hoje ela só é possível ser comprada do lado CT.<br>
+                No CS:GO, elas custavam $600 até 26 de setembro de 2017 e nos dias de hoje ela só é possível ser comprada do lado CT.<br>
                 Ela está sendo bastante usada nos pistols rounds do lado CT no competitivo em curtas distâncias por conta da sua quantidade de disparos
                 disponíveis e seu rate of fire alto, isso proporciona a possíbilidade de acertar mais tiros em apenas um carregador, porém não é uma boa escolha em rounds forçados por conta da sua baixa penetração no colete.
             </p>
@@ -584,8 +590,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="dEagleChart"></canvas>
-                <canvas id="dEagleChart2"></canvas>
+                <canvas id="dEagleChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="dEagleChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Desert Eagle é uma pistola semiautomática, de ação simples, operada por gás, que utiliza vários calibres, sendo de destaque o .50 Action Express, .44 Magnum, .357 Magnum e .22 Long Rifle. 
@@ -610,8 +616,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="p2000Chart"></canvas>
-                <canvas id="p2000Chart2"></canvas>
+                <canvas id="p2000Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="p2000Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Heckler & Koch P2000 é uma pistola semi-automática alemã, introduzida no final de 2001 e destinada principalmente aos mercados policiais, paramilitares e comerciais.
@@ -624,7 +630,7 @@
             <h3>Video guia da arma:</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ruWrhpLmIuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div id="infoUsp" class="info" style="display: none;">
+    <div id="infoUsp" class="info" style="display: flex;">
         <h1>USP-S</h1>
         <section class="macro_info">
             <p><b>Valor:</b> $200</p>
@@ -636,8 +642,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="uspChart"></canvas>
-                <canvas id="uspChart2"></canvas>
+                <canvas id="uspChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="uspChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Heckler & Koch USP ("Universelle Selbstladepistole") é uma pistola semiautomática desenhada pelo fabricante de armas Heckler & Koch localizada em Oberndorf am Neckar, com o objetivo de substituir a série P7 de pistolas. USP: 15 de (9×19mm).<br>
@@ -658,12 +664,12 @@
             <p><b>Dano:</b> Alto</p>
             <p><b>Alcance:</b> Médio</p>
             <p><b>Lado da compra:</b>CT</p>
-            <p><b>Rate of fire:</b> 400 RPM (Rounds per minute)</p>
+            <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
             <div id="gunGraph">
-                <canvas id="five7Chart"></canvas>
-                <canvas id="five7Chart2"></canvas>
+                <canvas id="five7Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="five7Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A FN Five-SeveN, estilizada como Five-SeveN, é uma pistola semiautomática projetada e fabricada pela FN Herstal na Bélgica. A pistola recebeu esse nome devido ao diâmetro do seu cartucho de 5,7 mm, e o estilo de capitalização da marca registrada visa enfatizar as iniciais da fabricante — FN.<br>
@@ -686,8 +692,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="tec9Chart"></canvas>
-                <canvas id="tec9Chart2"></canvas>
+                <canvas id="tec9Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="tec9Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>As Intratec TEC-9, TEC-DC9, KG-99 e AB-10 eram uma linha de pistolas semiautomáticas operadas por blowback. Elas foram desenvolvidas pela Intratec, uma subsidiária americana da fabricante sueca de armas de fogo Interdynamic AB.<br>
@@ -708,17 +714,44 @@
             <p><b>Dano:</b> Baixo</p>
             <p><b>Alcance:</b> Médio</p>
             <p><b>Lado da compra:</b>TR</p>
-            <p><b>Rate of fire:</b> 400 (semi-auto)/1200 (burst fire) RPM (Rounds per minute)</p>
+            <p><b>Rate of fire:</b> 600 (semi-auto)/1200 (burst fire) RPM (Rounds per minute)</p>
         </section>
 
             <div id="gunGraph">
-                <canvas id="g18Chart"></canvas>
-                <canvas id="g18Chart2"></canvas>
+                <canvas id="g18Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="g18Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>Glock é uma série de pistolas semiautomáticas com armação de polímero, com sistema de funcionamento por curto recuo basculante do cano, com culatra no sistema Delayed Blowback. Projetada e produzida pela fabricante austríaca Glock Ges.m.b.H.<br>
                 No jogo, a Glock-18 é a arma de spawn do lado TR, e ela possui uma precisão boa e um dano letal no hs a curtas distâncias, porém, a longas distâncias ela não é fatal como a USP-S ou a P2000 do lado CT. Junto da FAMAS a Glock-18 é unica pistola
                 que possui o modo de disparo burst-fire (rajada de três tiros), o que a torna mais letal a curtas distâncias.<br>
+            </p>
+
+            <h3>Video guia da arma:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dh6DzMtg4ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="infoR8" class="info" style="display: none;">
+        <h1>R8 Revolver</h1>
+        <section class="macro_info">
+            <p><b>Valor:</b> $600</p>
+            <p><b>Munição</b> 8/8</p>
+            <p><b>Dano:</b> Alto</p>
+            <p><b>Alcance:</b> Alto</p>
+            <p><b>Lado da compra:</b>CT ou TR</p>
+            <p><b>Rate of fire:</b> 85 (botão esquerdo)/1200 RPM (botão direito)</p>
+        </section>
+
+            <div id="gunGraph">
+                <canvas id="r8Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="r8Chart2" width="600" height="600" style="display: block;"></canvas>
+            </div>
+
+            <p>O R8 Revolver, conhecido na vida real como Smith & Wesson Model 327 Performance Center M&P R8, é a terceira pistola a ser introduzida na Global Offensive desde o lançamento do jogo no varejo.<br>
+                Pode ser trocada pela Desert Eagle no jogo. O revólver tem uma capacidade muito baixa, tendo 8 cartuchos por tambor e apenas um tambor de munição (8 cartuchos) na reserva. Atualmente, é a 
+                arma mais pesada disponível, ainda mais pesada do que muitas armas primárias. O revólver causa dano extremamente alto, capaz de matar instantaneamente com um tiro na cabeça a um alcance muito 
+                longo e independentemente do colete devido à sua baixa queda de dano e alta penetração de blindagem. Ele também pode matar inimigos sem armadura em um tiro na região do abdômen e da pelve. 
+                A penetração de superfície está no mesmo nível alto que a Desert Eagle em 200, melhor que as pistolas médias.<br>
+                No seu lançamento era a melhor arma do jogo, pois ela matava com 1 tiro sem colete e 2 tiros com colete, e também ela só custava $600. Isso fez com que o CS:GO "quebrasse". Mas rápidamente a Valve
+                nerfou o R8 Revolver. 
             </p>
 
             <h3>Video guia da arma:</h3>
@@ -738,8 +771,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="mp5Chart"></canvas>
-                <canvas id="mp5Chart2"></canvas>
+                <canvas id="mp5Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="mp5Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Heckler & Koch MP5 é uma submetralhadora, 9mm de projeto alemão, desenvolvido na década de 1960 por uma equipe de engenheiros alemães de armas pequenas fabricada pela empresa alemã Heckler & Koch GmbH da Oberndorf am Neckar.
@@ -764,8 +797,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="p90Chart"></canvas>
-                <canvas id="p90Chart2"></canvas>
+                <canvas id="p90Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="p90Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A FN P90 é uma submetralhadora de defesa pessoal compacta de 5,7×28mm, projetada e fabricada pela FN Herstal, na Bélgica.<br>
@@ -788,8 +821,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="ump45Chart"></canvas>
-                <canvas id="ump45Chart2"></canvas>
+                <canvas id="ump45Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="ump45Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A UMP é uma submetralhadora desenvolvida e fabricada pela empresa alemã Heckler & Koch. A UMP é usada por várias organizações e agências governamentais pelo mundo, sendo muito usada por forças especiais.<br>
@@ -812,8 +845,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="mp7Chart"></canvas>
-                <canvas id="mp7Chart2"></canvas>
+                <canvas id="mp7Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="mp7Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Heckler & Koch MP7 é uma arma de defesa pessoal que dispara o cartucho perfurante HK 4,6×30mm projetada pela fabricante alemã Heckler & Koch.<br>
@@ -827,7 +860,7 @@
     <div id="infoBizon" class="info" style="display: none;">
         <h1>PP-Bizon</h1>
         <section class="macro_info">
-            <p><b>Valor:</b> $1400</p>
+            <p><b>Valor:</b> $1600</p>
             <p><b>Munição</b> 64/120</p>
             <p><b>Dano:</b> Médio</p>
             <p><b>Alcance:</b> Baixo</p>
@@ -836,8 +869,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="bizonChart"></canvas>
-                <canvas id="bizonChart2"></canvas>
+                <canvas id="bizonChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="bizonChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A PP-19 Bizon é uma submetralhadora desenvolvida na década de 1990 por uma equipe de engenheiros chefiada por Victor Kalashnikov. <br>
@@ -861,8 +894,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="mp9Chart"></canvas>
-                <canvas id="mp9Chart2"></canvas>
+                <canvas id="mp9Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="mp9Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Brügger & Thomet MP9 é uma pistola-metralhadora projetada e fabricada pela Brügger & Thomet da Suíça. A MP9 é uma pistola-metralhadora de fogo seletivo que utiliza munição de pistola 9x19mm Parabellum. 
@@ -887,12 +920,12 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="mac10Chart"></canvas>
-                <canvas id="mac10Chart2"></canvas>
+                <canvas id="mac10Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="mac10Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Ingram MAC-10 é uma submetralhadora muito compacta, desenvolvida por Gordon B. Ingram em 1964. <br>
-                No jogo, a MAC-10 é uma metralhadora moderadamente poderosa disponível apenas para os Terroristas. Tem uma taxa de tiro muito alta e dano médio, e é uma opção relativamente barata ($ 1400 em jogos anteriores e $ 1050 no CS:GO).
+                No jogo, a MAC-10 é uma metralhadora moderadamente poderosa disponível apenas para os Terroristas. Tem uma taxa de tiro muito alta e dano médio, e é uma opção relativamente barata ($ 1600 em jogos anteriores e $ 1050 no CS:GO).
                 As principais desvantagens são sua alta queda de dano (embora seu dano base mais alto compense um pouco), má precisão (embora a imprecisão de movimento seja relativamente baixa) e recoil alto, que é principalmente horizontal.
                 Sua penetração a colete também é fraca, tornando-a inadequada para rodadas posteriores. Por essas razões, o MAC-10 é muito incomum e muito raramente visto durante o jogo casual ou competitivo.
             </p>
@@ -914,8 +947,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="xm1014Chart"></canvas>
-                <canvas id="xm1014Chart2"></canvas>
+                <canvas id="xm1014Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="xm1014Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Benelli XM1014 é uma espingarda semiautomática italiana manufaturada pela Benelli Armi SpA.<br>
@@ -940,8 +973,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="novaChart"></canvas>
-                <canvas id="novaChart2"></canvas>
+                <canvas id="novaChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="novaChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Benelli Nova é uma espingarda italiana. No jogo, ele contém 8 munições de cartuchos de espingarda de calibre 12.<br>
@@ -966,8 +999,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="mag7Chart"></canvas>
-                <canvas id="mag7Chart2"></canvas>
+                <canvas id="mag7Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="mag7Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A MAG-7 é uma espingarda sul-africana fabricada pela Techno Arms PTY desde 1995. É única por ter uma forma relativamente compacta para uma espingarda e dispara um projétil 
@@ -995,8 +1028,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="canocurtoChart"></canvas>
-                <canvas id="canocurtoChart2"></canvas>
+                <canvas id="canocurtoChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="canocurtoChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>A Cano-curto é uma espingarda Remington 870 modificada com um cano mais curto e 'serrado'. O termo "Sawed-Off" (também chamado de Sawn-off no Reino Unido e países da Commonwealth) significa encurtar o cano e o estoque de um rifle e espingardas, 
@@ -1023,8 +1056,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="m249Chart"></canvas>
-                <canvas id="m249Chart2"></canvas>
+                <canvas id="m249Chart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="m249Chart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>M249 é a designação de uma metralhadora leve padrão do Exército Americano, criada no fim da década de 1970. Esta arma também é usada pelo Corpo de Fuzileiros Navais do Brasil convencionada pelo nome de "minimi", 
@@ -1046,8 +1079,8 @@
         </section>
 
             <div id="gunGraph">
-                <canvas id="negevChart"></canvas>
-                <canvas id="negevChart2"></canvas>
+                <canvas id="negevChart" width="600" height="600" style="display: block;"></canvas>
+                <canvas id="negevChart2" width="600" height="600" style="display: block;"></canvas>
             </div>
 
             <p>O IWI Negev é uma metralhadora leve da OTAN de 5,56 × 45mm desenvolvida pela Israel Weapon Industries, anteriormente conhecida como Israel Military Industries Ltd. Em 2012, a IWI introduziu a metralhadora de uso geral 
@@ -1069,6 +1102,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
 <script>
+    //Começo dos graficos dos rifles
     const ak_chart = document.getElementById("akChart").getContext('2d');
 
     let akRadar = new Chart(ak_chart, {
@@ -1164,4 +1198,455 @@
             }]
         }
     })
+
+    const awp_chart = document.getElementById("awpChart").getContext('2d');
+
+    let awpRadar = new Chart(awp_chart, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano sem colete',
+                backgroundColor: '#de9a35c4',
+                borderColor: 'orange',
+                borderWidth: 2,
+                data: [459, 115, 143, 85]
+            }]
+        }
+    })
+
+    const awp_chart2 = document.getElementById("awpChart2").getContext('2d');
+
+    let awpRadar2 = new Chart(awp_chart2, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano com colete',
+                backgroundColor: '#0000FFc4',
+                borderColor: '#0000FF',
+                borderWidth: 2,
+                data: [448, 112, 140, 85]
+            }]
+        }
+    })
+
+const galil_chart = document.getElementById("galilChart").getContext('2d');
+
+let galilRadar = new Chart(galil_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [120, 30, 37, 22]
+        }]
+    }
+})
+
+const galil_chart2 = document.getElementById("galilChart2").getContext('2d');
+
+let galilRadar2 = new Chart(galil_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [92, 23, 29, 22]
+        }]
+    }
+})
+
+const famas_chart = document.getElementById("famasChart").getContext('2d');
+
+let famasRadar = new Chart(famas_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [120, 30, 37, 22]
+        }]
+    }
+})
+
+const famas_chart2 = document.getElementById("famasChart2").getContext('2d');
+
+let famasRadar2 = new Chart(famas_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [84, 21, 26, 22]
+        }]
+    }
+})
+
+const sg553_chart = document.getElementById("sg553Chart").getContext('2d');
+
+let sg553Radar = new Chart(sg553_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [119, 29, 37, 22]
+        }]
+    }
+})
+
+const sg553_chart2 = document.getElementById("sg553Chart2").getContext('2d');
+
+let sg553Radar2 = new Chart(sg553_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [119, 29, 37, 22]
+        }]
+    }
+})
+
+const aug_chart = document.getElementById("augChart").getContext('2d');
+
+let augRadar = new Chart(aug_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [112, 28, 35, 21]
+        }]
+    }
+})
+
+const aug_chart2 = document.getElementById("augChart2").getContext('2d');
+
+let augRadar2 = new Chart(aug_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [100, 25, 31, 21]
+        }]
+    }
+})
+
+const g3_chart = document.getElementById("g3Chart").getContext('2d');
+
+let g3Radar = new Chart(g3_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [316, 79, 98, 60]
+        }]
+    }
+})
+
+const g3_chart2 = document.getElementById("g3Chart2").getContext('2d');
+
+let g3Radar2 = new Chart(g3_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [263, 65, 81, 60]
+        }]
+    }
+})
+
+const scar_chart = document.getElementById("scarChart").getContext('2d');
+
+let scarRadar = new Chart(scar_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [319, 79, 99, 59]
+        }]
+    }
+})
+
+const scar_chart2 = document.getElementById("scarChart2").getContext('2d');
+
+let scarRadar2 = new Chart(scar_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [263, 65, 82, 59]
+        }]
+    }
+})
+
+const scout_chart = document.getElementById("scoutChart").getContext('2d');
+
+let scoutRadar = new Chart(scout_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [352, 88, 110, 66]
+        }]
+    }
+})
+
+const scout_chart2 = document.getElementById("scoutChart2").getContext('2d');
+
+let scoutRadar2 = new Chart(scout_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [299, 74, 93, 66]
+        }]
+    }
+})
+//Fim dos graficos dos rifles
+
+//Começo dos graficos das pistolas
+const p250_chart = document.getElementById("p250Chart").getContext('2d');
+
+let p250Radar = new Chart(p250_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [151, 37, 47, 28]
+        }]
+    }
+})
+
+const p250_chart2 = document.getElementById("p250Chart2").getContext('2d');
+
+let p250Radar2 = new Chart(p250_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [96, 24, 30, 28]
+        }]
+    }
+})
+
+const cz75_chart = document.getElementById("cz75Chart").getContext('2d');
+
+let cz75Radar = new Chart(cz75_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [123, 30, 38, 23]
+        }]
+    }
+})
+
+const cz75_chart2 = document.getElementById("cz75Chart2").getContext('2d');
+
+let cz75Radar2 = new Chart(cz75_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [95, 23, 29, 23]
+        }]
+    }
+})
+
+const dual_chart = document.getElementById("dualChart").getContext('2d');
+
+let dualRadar = new Chart(dual_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [150, 37, 46, 28]
+        }]
+    }
+})
+
+const dual_chart2 = document.getElementById("dualChart2").getContext('2d');
+
+let dualRadar2 = new Chart(dual_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [86, 21, 26, 28]
+        }]
+    }
+})
+
+const dEagle_chart = document.getElementById("dEagleChart").getContext('2d');
+
+let dEagleRadar = new Chart(dEagle_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [205, 52, 65, 39]
+        }]
+    }
+})
+
+const dEagle_chart2 = document.getElementById("dEagleChart2").getContext('2d');
+
+let dEagleRadar2 = new Chart(dEagle_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [191, 49, 61, 39]
+        }]
+    }
+})
+
+const p2000_chart = document.getElementById("p2000Chart").getContext('2d');
+
+let p2000Radar = new Chart(p2000_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [140, 34, 43, 26]
+        }]
+    }
+})
+
+const p2000_chart2 = document.getElementById("p2000Chart2").getContext('2d');
+
+let p2000Radar2 = new Chart(p2000_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [70, 17, 22, 26]
+        }]
+    }
+})
+
+const usp_chart = document.getElementById("uspChart").getContext('2d');
+
+let uspRadar = new Chart(usp_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [140, 34, 43, 26]
+        }]
+    }
+})
+
+const usp_chart2 = document.getElementById("uspChart2").getContext('2d');
+
+let uspRadar2 = new Chart(usp_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [70, 17, 22, 26]
+        }]
+    }
+})
+
 </script>
