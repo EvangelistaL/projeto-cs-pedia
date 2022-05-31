@@ -38,6 +38,16 @@ a {
     margin-right: 10%;
 }
 
+#imagem_inicial::-webkit-scrollbar{
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+#imagem_inicial::-webkit-scrollbar-thumb{
+    background-color: #0c0f12;
+    border-radius: 10px;
+}
+
 #imagem_inicial {
     display: flex;
     width: 100vw;

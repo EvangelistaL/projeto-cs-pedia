@@ -10,185 +10,194 @@
     <link rel="manifest" href="./favicon_io/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
     <title>CS:PEDIA | Dashboards</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../arquivos-website/CSS/dashboard.css">
 </head>
 <body>
     <header>
         <img src="./imagens/logo_laranja.png" alt="" height="40">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
-            <a href="cadastro.html"><b>Cadastro</b></a>
+            <span>Bem vindo <b>usuario</b></span>
+            <a href=""><b>Sair</b></a>
         </nav>
     </header>
 
-    <div id="rifles">
+    <div id="guns">
         <h2>Rifles</h2>
+        <div class="gunBox">
         <section>
             <h4>AK-47</h4>
-            <img src="./imagens/ak47png.webp" alt="ak47_img">
+            <img src="./imagens/ak47png.webp" alt="ak47_img" id="ak47" onclick="mostrarDados('ak47', 'infoAk')">
         </section>
         <section>
             <h4>M4A1-S</h4>
-            <img src="./imagens/m4a1spng.webp" alt="m4a1s_img">
+            <img src="./imagens/m4a1spng.webp" alt="m4a1s_img" id="m4a1s" onclick="mostrarDados('m4a1s', 'infoM4s')">
         </section>
         <section>
             <h4>M4A4</h4>
-            <img src="./imagens/m4a4png.webp" alt="m4a4_img">
+            <img src="./imagens/m4a4png.webp" alt="m4a4_img" id="m4a4" onclick="mostrarDados('m4a4', 'infoM4')">
         </section>
         <section>
             <h4>AWP</h4>
-            <img src="./imagens/awppng.webp" alt="awp_png">
+            <img src="./imagens/awppng.webp" alt="awp_png" id="awp" onclick="mostrarDados('awp', 'infoAwp')">
         </section>
         <section>
             <h4>GALIL AR</h4>
-            <img src="./imagens/galilpng.webp" alt="galil_png">
+            <img src="./imagens/galilpng.webp" alt="galil_png" id="galil" onclick="mostrarDados('galil', 'infoGalil')">
         </section>
         <section>
             <h4>FAMAS</h4>
-            <img src="./imagens/famaspng.webp" alt="famas_png">
+            <img src="./imagens/famaspng.webp" alt="famas_png" id="famas" onclick="mostrarDados('famas', 'infoFamas')">
         </section>
         <section>
             <h4>SG 553</h4>
-            <img src="./imagens/sg553png.webp" alt="sg553_png">
+            <img src="./imagens/sg553png.webp" alt="sg553_png" id="sg553" onclick="mostrarDados('sg553', 'infoSg553')">
         </section>
         <section>
             <h4>AUG</h4>
-            <img src="./imagens/aug_png.webp" alt="aug_png">
+            <img src="./imagens/aug_png.webp" alt="aug_png" id="aug" onclick="mostrarDados('aug', 'infoAug')">
         </section>
         <section>
             <h4>G3SG 1</h4>
-            <img src="./imagens/g3sgpng.webp" alt="g3sg_png">
+            <img src="./imagens/g3sgpng.webp" alt="g3sg_png" id="g3sg" onclick="mostrarDados('g3sg', 'infoG3')">
         </section>
         <section>
             <h4>SCAR-20</h4>
-            <img src="./imagens/scar20png.webp" alt=scar20_png">
+            <img src="./imagens/scar20png.webp" alt="scar20_png" id="scar" onclick="mostrarDados('scar', 'infoScar')">
         </section>
         <section>
             <h4>SSG 08</h4>
-            <img src="./imagens/scoutpng.png" alt="scout_png">
+            <img src="./imagens/scoutpng.png" alt="scout_png" id="scout" onclick="mostrarDados('scout', 'infoScout')">
         </section>
     </div>
+    </div>
 
-    <div id="pistol">
+    <div id="guns">
         <h2>Pistolas</h2>
+        <div class="gunBox">
         <section>
             <h4>P250</h4>
-            <img src="./imagens/p250png.webp" alt="p250_png">
+            <img src="./imagens/p250png.webp" alt="p250_png" id="p250" onclick="mostrarDados('p250', 'infoP250')">
         </section>
         <section>
             <h4>CZ75-Auto</h4>
-            <img src="./imagens/cz75png.webp" alt="cz75_png">
+            <img src="./imagens/cz75png.webp" alt="cz75_png" id="cz75" onclick="mostrarDados('cz75', 'infoCz75')">
         </section>
         <section>
             <h4>Berettas Duplas</h4>
-            <img src="./imagens/dualBerettapng.webp" alt="dual_png">
+            <img src="./imagens/dualBerettapng.webp" alt="dual_png" id="dual" onclick="mostrarDados('dual', 'infoDual')">
         </section>
         <section>
             <h4>Desert Eagle</h4>
-            <img src="./imagens/dEaglepng.webp" alt="dEagle_png">
+            <img src="./imagens/dEaglepng.webp" alt="dEagle_png" id="dEagle" onclick="mostrarDados('dEagle', 'infoDeagle')">
         </section>
         <section>
             <h4>P2000</h4>
-            <img src="./imagens/p2000png.webp" alt="p2000_png">
+            <img src="./imagens/p2000png.webp" alt="p2000_png" id="p2000" onclick="mostrarDados('p2000', 'infoP2000')"> 
         </section>
         <section>
             <h4>USP-S</h4>
-            <img src="./imagens/uspspng.webp" alt="usps_png">
+            <img src="./imagens/uspspng.webp" alt="usps_png" id="usp" onclick="mostrarDados('usp', 'infoUsp')">
         </section>
         <section>
             <h4>Five-SeveN</h4>
-            <img src="./imagens/57png.webp" alt="57_png">
+            <img src="./imagens/57png.webp" alt="57_png" id="five7" onclick="mostrarDados('five7', 'info57')">
         </section>
         <section>
             <h4>Tec-9</h4>
-            <img src="./imagens/tec9png.webp" alt="tec9_png">
+            <img src="./imagens/tec9png.webp" alt="tec9_png" id="tec9" onclick="mostrarDados('tec9', 'infoTec9')">
         </section>
         <section>
             <h4>Glock-18</h4>
-            <img src="./imagens/g18png.webp" alt="g18_png">
+            <img src="./imagens/g18png.webp" alt="g18_png" id="g18" onclick="mostrarDados('g18', 'infoGlock')">
         </section>
     </div>
+    </div>
 
-    <div id="sub_machine">
+    <div id="guns">
         <h2>Submetralhadoras</h2>
+        <div class="gunBox">
         <section>
             <h4>MP5-SD</h4>
-            <img src="./imagens/mp5png.png" alt="mp5_png">
+            <img src="./imagens/mp5png.png" alt="mp5_png" id="mp5" onclick="mostrarDados('infoMp5')">
         </section>
         <section>
             <h4>P90</h4>
-            <img src="./imagens/p90png.webp" alt="p90_png">
+            <img src="./imagens/p90png.webp" alt="p90_png" id="p90" onclick="mostrarDados('infop90')">
         </section>
         <section>
             <h4>UMP-45</h4>
-            <img src="./imagens/ump45png.webp" alt="ump45_png">
+            <img src="./imagens/ump45png.webp" alt="ump45_png" id="ump45" onclick="mostrarDados('ump45', 'infoUmp45')">
         </section>
         <section>
             <h4>MP7</h4>
-            <img src="./imagens/mp7png.webp" alt="mp7_png">
+            <img src="./imagens/mp7png.webp" alt="mp7_png" id="mp7" onclick="mostrarDados('mp7', 'infomp7')">
         </section>
         <section>
             <h4>PP-Bizon</h4>
-            <img src="./imagens/ppBizonpng.webp" alt="ppBzion_png">
+            <img src="./imagens/ppBizonpng.webp" alt="ppBizon_png" id="ppBizon" onclick="mostrarDados('ppBizon', 'infoBizon')">
         </section>
         <section>
             <h4>MP9</h4>
-            <img src="./imagens/mp9png.webp" alt="mp9_png">
+            <img src="./imagens/mp9png.webp" alt="mp9_png" id="mp9" onclick="mostrarDados('mp9', 'infoMp9')">
         </section>
         <section>
             <h4>MAC-10</h4>
-            <img src="./imagens/mac10png.webp" alt="mac10_png">
+            <img src="./imagens/mac10png.webp" alt="mac10_png" id="mac10" onclick="mostrarDados('mac10', 'infoMac10')">
         </section>
+    </div>
     </div>
 
     <div id="shotguns">
         <h2>Escopetas</h2>
+        <div class="gunBox"></div>
         <section>
             <h4>XM 1014</h4>
-            <img src="./imagens/xm1014png.webp" alt="xm1014_png">
+            <img src="./imagens/xm1014png.webp" alt="xm1014_png" id="xm1014" onclick="mostrarDados('xm1014', 'infoXm1014')">
         </section>
         <section>
             <h4>Nova</h4>
-            <img src="./imagens/novapng.webp" alt="nova_png">
+            <img src="./imagens/novapng.webp" alt="nova_png" id="nova" onclick="mostrarDados('nova', 'infoNova')">
         </section>
         <section>
             <h4>MAG-7</h4>
-            <img src="./imagens/mag7png.webp" alt="mag7_png">
+            <img src="./imagens/mag7png.webp" alt="mag7_png" id="mag7" onclick="mostrarDados('mag7', 'infoMag7')">
         </section>
         <section>
             <h4>Cano Curto</h4>
-            <img src="./imagens/swedOffpng.webp" alt="swedOff_png">
+            <img src="./imagens/swedOffpng.webp" alt="swedOff_png" id="canoCurto" onclick="mostrarDados('canoCurto', 'infoCanocurto')">
         </section>
     </div>
+    </div>
 
-    <div id="machineguns">
+    <div id="guns">
         <h2>Metralhadoras</h2>
+        <div class="gunBox">
         <section>
             <h4>M249</h4>
-            <img src="./imagens/m249png.webp" alt="m249_png">
+            <img src="./imagens/m249png.webp" alt="m249_png" id="m249" onclick="mostrarDados('m249', 'infoM249')">
         </section>
         <section>
             <h4>Negev</h4>
-            <img src="./imagens/negevpng.webp" alt="negev_png">
+            <img src="./imagens/negevpng.webp" alt="negev_png" id="negev" onclick="mostrarDados('negev', 'infoNegev')">
         </section>
+    </div>
     </div>
 
     <!-- Rifles -->
-    <div id="infoAk" class="info" style="display: none;">
+    <div id="infoAk" class="info" style="display: flex;">
         <h1>AK-47</h1>
         <section class="macro_info">
             <p><b>Valor:</b> $2700</p>
             <p><b>Munição</b> 30/90</p>
             <p><b>Dano:</b> Alto</p>
             <p><b>Alcance:</b> Alto</p>
-            <p><b>Lado da compra:</b>TR</p>
+            <p><b>Lado da compra:</b> TR</p>
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
             <div id="gunGraph">
-                <canvas id="akChart"></canvas>
-                <canvas id="akChart2"></canvas>
+                <canvas id="akChart" width="400" height="400" style="display: block;"></canvas>
+                <canvas id="akChart2" width="400" height="400" style="display: block;"></canvas>
             </div>
 
             <p>O AK-47, ou AK como é oficialmente conhecida, também conhecida como Kalashnikov, é um fuzil de assalto de calibre 7,62x39mm 
@@ -1055,3 +1064,104 @@
     <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
 </body>
 </html>
+
+<script src="./JS/dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+<script>
+    const ak_chart = document.getElementById("akChart").getContext('2d');
+
+    let akRadar = new Chart(ak_chart, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano sem colete',
+                backgroundColor: '#de9a35c4',
+                borderColor: 'orange',
+                borderWidth: 2,
+                data: [100, 35, 44, 26]
+            }]
+        }
+    })
+
+    const ak_chart2 = document.getElementById("akChart2").getContext('2d');
+
+    let akRadar2 = new Chart(ak_chart2, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano com colete',
+                backgroundColor: '#0000FFc4',
+                borderColor: '#0000FF',
+                borderWidth: 2,
+                data: [143, 35, 44, 26]
+            }]
+        }
+    })
+
+    const m4s_chart = document.getElementById("m4sChart").getContext('2d');
+
+    let m4sRadar = new Chart(m4s_chart, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano sem colete',
+                backgroundColor: '#de9a35c4',
+                borderColor: 'orange',
+                borderWidth: 2,
+                data: [132, 37, 47, 28]
+            }]
+        }
+    })
+
+    const m4s_chart2 = document.getElementById("m4sChart2").getContext('2d');
+
+    let m4sRadar2 = new Chart(m4s_chart2, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano com colete',
+                backgroundColor: '#0000FFc4',
+                borderColor: '#0000FF',
+                borderWidth: 2,
+                data: [92, 26, 33, 28]
+            }]
+        }
+    })
+
+    const m4_chart = document.getElementById("m4Chart").getContext('2d');
+
+    let m4Radar = new Chart(m4_chart, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano sem colete',
+                backgroundColor: '#de9a35c4',
+                borderColor: 'orange',
+                borderWidth: 2,
+                data: [131, 32, 41, 24]
+            }]
+        }
+    })
+
+    const m4_chart2 = document.getElementById("m4Chart2").getContext('2d');
+
+    let m4Radar2 = new Chart(m4_chart2, {
+        type: 'radar',
+        data: {
+            labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+            datasets: [{
+                label: 'Dano com colete',
+                backgroundColor: '#0000FFc4',
+                borderColor: '#0000FF',
+                borderWidth: 2,
+                data: [131, 32, 41, 24]
+            }]
+        }
+    })
+</script>

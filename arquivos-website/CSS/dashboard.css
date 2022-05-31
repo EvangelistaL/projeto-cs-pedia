@@ -1,0 +1,151 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    background-color: #121930;
+    color: #de9b35;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0c0f12;
+    height: 100px;
+}
+
+header nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+header img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 50px;
+    margin-left: 5%;
+}
+
+a {
+    font-size: 18px;
+    color: #de9b35;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 10%;
+}
+
+.gunBox::-webkit-scrollbar{
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+.gunBox::-webkit-scrollbar-thumb{
+    background-color: #0c0f12;
+    border-radius: 10px;
+}
+
+#guns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#guns .gunBox{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 80%;
+}
+
+#guns section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#guns section img{
+   height: 100px;
+   margin-right: 50px;
+   margin-left: 50px;
+}
+
+#shotguns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#shotguns h2{
+    padding-left: 1%;
+    width: 5%;
+}
+
+#shotguns .gunBox{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#shotguns section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shotguns section img{
+    height: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+ }
+
+ .info {
+     margin-top: 5%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #0c0f123b;
+ }
+
+.info iframe {
+    margin-bottom: 2%;
+}
+
+ .info p {
+     width: 80%;
+ }
+
+ .info section {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+ }
+
+ .info section p{
+     margin-left: 2%;
+    width: 200px;
+}
+footer {
+    margin-top: 5%;
+    display: flex;
+    color: #de9b35;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    height: 200px;
+    background-color: #0c0f12;
+}
+
+footer p {
+    border-bottom: solid 2px #de9b35;
+}
