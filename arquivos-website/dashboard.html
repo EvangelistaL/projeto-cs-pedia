@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../arquivos-website/CSS/dashboard.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <img src="./imagens/logo_laranja.png" alt="" height="40">
         <nav>
             <span>Bem vindo <b>usuario</b></span>
@@ -134,7 +134,7 @@
         </section>
         <section>
             <h4>MP7</h4>
-            <img src="./imagens/mp7png.webp" alt="mp7_png" id="mp7" onclick="mostrarDados('mp7', 'infomp7')">
+            <img src="./imagens/mp7png.webp" alt="mp7_png" id="mp7" onclick="mostrarDados('mp7', 'infoMp7')">
         </section>
         <section>
             <h4>PP-Bizon</h4>
@@ -199,10 +199,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="akChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="akChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="akChart" width="600" height="600"></canvas>
+                <canvas id="akChart2" width="600" height="600"></canvas>
+            
 
             <p>O AK-47, ou AK como é oficialmente conhecida, também conhecida como Kalashnikov, é um fuzil de assalto de calibre 7,62x39mm 
                 criado em 1947 por Mikhail Kalashnikov e produzido na União Soviética pela indústria estatal IZH. É a arma de fogo originária 
@@ -228,10 +228,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="m4sChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="m4sChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="m4sChart" width="600" height="600"></canvas>
+                <canvas id="m4sChart2" width="600" height="600"></canvas>
+            
 
             <p>A carabina M4 é uma variante mais curta e mais leve do rifle M16A2. A M4 é uma carabina alimentada com um carregador de 25 munições no calibre 5,56×45mm NATO, inventada pela Colt.<br>
                 No CS ela é uma arma disponivel para compra do lado CT e possui um recuo baixo. Ela entrou no meta recentemente depois de buffs que deram na arma e o reajuste de preço para $2900,
@@ -254,10 +254,10 @@
             <p><b>Rate of fire:</b> 666 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="m4Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="m4Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="m4Chart" width="600" height="600"></canvas>
+                <canvas id="m4Chart2" width="600" height="600"></canvas>
+            
 
             <p>A carabina M4 é uma variante mais curta e mais leve do rifle M16A2. A M4 é uma carabina alimentada com um carregador de 25 munições no calibre 5,56×45mm NATO, inventada pela Colt.<br>
                 No CS ela é uma arma disponivel para compra do lado CT e possui um recuo baixo. 
@@ -279,10 +279,10 @@
             <p><b>Rate of fire:</b> 41 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="awpChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="awpChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="awpChart" width="600" height="600"></canvas>
+                <canvas id="awpChart2" width="600" height="600"></canvas>
+            
 
             <p>O Arctic Warfare Magnum é uma das plataformas de fuzil de precisão mais utilizadas no mundo, especialmente pelos países do grupo G7. Foi desenvolvido pela empresa britânica Accuracy International
                 utilizando o calibre .338 Lapua Magnum.<br>
@@ -306,10 +306,10 @@
             <p><b>Rate of fire:</b> 666 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="galilChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="galilChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="galilChart" width="600" height="600"></canvas>
+                <canvas id="galilChart2" width="600" height="600"></canvas>
+            
 
             <p> O Galil AR é uma ver posterior ao Galil ACE 22, um fuzil israelita produzido pela Israel Weapon Industries.
                 O ACE 22 é uma versão com o cano médio do IWI Galil ACE series, produzido desde 2008. No jogo o nome vem diferente
@@ -333,10 +333,10 @@
             <p><b>Rate of fire:</b> 666 (Auto)/800 RPM(Burst)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="famasChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="famasChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="famasChart" width="600" height="600"></canvas>
+                <canvas id="famasChart2" width="600" height="600"></canvas>
+            
 
             <p>FAMAS é um fuzil de assalto de origem francesa, desenvolvido e fabricado pela MAS em 1978, e atualmente 
                 fabricado pela sua sucessora, a Nexter. O fuzil FAMAS começou a ser concebido em 1967 pela Saint-Étienne, 
@@ -360,10 +360,10 @@
             <p><b>Rate of fire:</b> 545 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="sg553Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="sg553Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="sg553Chart" width="600" height="600"></canvas>
+                <canvas id="sg553Chart2" width="600" height="600"></canvas>
+            
 
             <p>O SG 553 é um fuzil de assalto fabricado pela Swiss Arms AG (anteriormente uma divisão da Schweizerische Industrie 
                 Gesellschaft, SIG, agora conhecida como SIG Holding AG) na Suíça. "SG" é uma abreviatura de Sturmgewehr (fuzil de assalto). 
@@ -390,10 +390,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="augChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="augChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="augChart" width="600" height="600"></canvas>
+                <canvas id="augChart2" width="600" height="600"></canvas>
+            
 
             <p>O Steyr AUG é um fuzil de assalto bullpup 5,56×45mm NATO austríaco, projetado nos anos 60 pela Steyr-Daimler-Puch 
                 e agora fabricado pela Steyr Mannlicher GmbH & Co KG. Foi adotado pelo exército austríaco como StG 77 em 1978, onde 
@@ -418,10 +418,10 @@
             <p><b>Rate of fire:</b> 240 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="g3Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="g3Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="g3Chart" width="600" height="600"></canvas>
+                <canvas id="g3Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Gewehr 3 (G3) (em alemão: Gewehr 3, lit. "Fuzil 3") é uma espingarda de combate de fogo selectivo usada nos Exercitos Português e Brasileiro,
                 (atualmente descontinuada pelas Forcas Armadas Portuguesas desde 16 de Setembro de 2019, estando a ser substituída pela nova arma Belga FN SCAR-L
@@ -448,10 +448,10 @@
             <p><b>Rate of fire:</b> 240 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="scarChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="scarChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="scarChart" width="600" height="600"></canvas>
+                <canvas id="scarChart2" width="600" height="600"></canvas>
+            
 
             <p>O FN SCAR é construído para ser extremamente modular, incluindo mudança de cano para alternar entre calibres. 
                 O fuzil foi desenvolvido pela fabricante belga FN Herstal (FNH) para o Comando de Operações Especiais dos 
@@ -480,10 +480,10 @@
             <p><b>Rate of fire:</b> 48 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="scoutChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="scoutChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="scoutChart" width="600" height="600"></canvas>
+                <canvas id="scoutChart2" width="600" height="600"></canvas>
+           
 
             <p>O Steyr SSG 08 é um rifle de precisão austríaco desenvolvido e produzido por Steyr Mannlicher. O rifle é mais uma evolução do rifle sniper SSG 04 de Steyr. <br>
                 Ela possui o mesmo estilo de tiro da AWP pois também se trata de um rifle bolt-action, porém ela possui um rate of fire um pouco maior e também proporciona uma 
@@ -508,10 +508,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="p250Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="p250Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="p250Chart" width="600" height="600"></canvas>
+                <canvas id="p250Chart2" width="600" height="600"></canvas>
+            
 
             <p>A SIG Sauer P250 é uma pistola semiautomática fabricada pela Sigarms. Introduzida em 2007, a SIG P250 foi fabricada nos calibres: .22 Long Rifle, .380 ACP, 9×19mm Parabellum, .357 SIG, .40 S&W e .45 ACP.<br>
             No jogo, é uma arma bastante controlável (porém um pouco diferente as pistolas padrões do lado ct/tr). Ela tem um dano base maior contra os adversários sem colete e permite dar "hit-kill" em hs contra 
@@ -535,10 +535,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="cz75Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="cz75Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="cz75Chart" width="600" height="600"></canvas>
+                <canvas id="cz75Chart2" width="600" height="600"></canvas>
+            
 
             <p>A CZ75 é uma pistola produzida pela fabricante de armas de fogo checa ČZUB. Introduzida pela primeira vez em 1975, é uma das "wonder nines" originais e apresenta um carregador bifilar,
                 construção toda em aço e um cano forjado a martelo.<br>
@@ -563,10 +563,10 @@
             <p><b>Rate of fire:</b> 500 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="dualChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="dualChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="dualChart" width="600" height="600"></canvas>
+                <canvas id="dualChart2" width="600" height="600"></canvas>
+            
 
             <p>A Beretta é uma pistola, de origem italiana, calibre 9×19mm Parabellum usada como a arma secundária oficial das forças armadas dos Estados Unidos desde 1985. É essencialmente uma especificação militar da Beretta 92FS.<br>
                 No jogo, as Berettas Duplas são moderavelmente fortes no meio das pistolas semi-automaticas. Originalmente ela era disponível do lado dos terroristas, mas no lançamento do CS:GO elas eram disponíveis dos dois lados.
@@ -589,10 +589,10 @@
             <p><b>Rate of fire:</b> 267 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="dEagleChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="dEagleChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="dEagleChart" width="600" height="600"></canvas>
+                <canvas id="dEagleChart2" width="600" height="600"></canvas>
+            
 
             <p>A Desert Eagle é uma pistola semiautomática, de ação simples, operada por gás, que utiliza vários calibres, sendo de destaque o .50 Action Express, .44 Magnum, .357 Magnum e .22 Long Rifle. 
                 Existe também uma versão mais compacta no calibre 9mm. <br>
@@ -615,10 +615,10 @@
             <p><b>Rate of fire:</b> 352 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="p2000Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="p2000Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="p2000Chart" width="600" height="600"></canvas>
+                <canvas id="p2000Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Heckler & Koch P2000 é uma pistola semi-automática alemã, introduzida no final de 2001 e destinada principalmente aos mercados policiais, paramilitares e comerciais.
                 É baseado na pistola Compact da USP.<br>
@@ -641,10 +641,10 @@
             <p><b>Rate of fire:</b> 352 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="uspChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="uspChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="uspChart" width="600" height="600"></canvas>
+                <canvas id="uspChart2" width="600" height="600"></canvas>
+            
 
             <p>A Heckler & Koch USP ("Universelle Selbstladepistole") é uma pistola semiautomática desenhada pelo fabricante de armas Heckler & Koch localizada em Oberndorf am Neckar, com o objetivo de substituir a série P7 de pistolas. USP: 15 de (9×19mm).<br>
                 A USP-S é uma das opções das pistolas padrões do lado CT, ela é como se fosse a P2000 porém com silenciador, e isso faz com que o inimigo não ouça seus disparos a uma determinada distância. A mesma possui um alcance bem alto e elimina o adversário com
@@ -667,10 +667,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="five7Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="five7Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="five7Chart" width="600" height="600"></canvas>
+                <canvas id="five7Chart2" width="600" height="600"></canvas>
+            
 
             <p>A FN Five-SeveN, estilizada como Five-SeveN, é uma pistola semiautomática projetada e fabricada pela FN Herstal na Bélgica. A pistola recebeu esse nome devido ao diâmetro do seu cartucho de 5,7 mm, e o estilo de capitalização da marca registrada visa enfatizar as iniciais da fabricante — FN.<br>
                 No CS:GO é possível seleciona-la no lugar da CZ75 no inventario de seleção de armas, e ela só é disponíveldo lado CT. A arma possui um dano alto e uma penetração de colete altissima, e um hs no inimigo é fatal com ou sem colete.
@@ -691,10 +691,10 @@
             <p><b>Rate of fire:</b> 500 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="tec9Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="tec9Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="tec9Chart" width="600" height="600"></canvas>
+                <canvas id="tec9Chart2" width="600" height="600"></canvas>
+            
 
             <p>As Intratec TEC-9, TEC-DC9, KG-99 e AB-10 eram uma linha de pistolas semiautomáticas operadas por blowback. Elas foram desenvolvidas pela Intratec, uma subsidiária americana da fabricante sueca de armas de fogo Interdynamic AB.<br>
                 No jogo, é uma arma semi-automatica e possui 18 disparos no carregador. O recoil da arma é bem alto quando você está "sentando o dedo" e o spray dela também fica muito alto, mas caso você atira dando "taps" ela tem uma certa precisão,
@@ -717,10 +717,10 @@
             <p><b>Rate of fire:</b> 600 (semi-auto)/1200 (burst fire) RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="g18Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="g18Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="g18Chart" width="600" height="600"></canvas>
+                <canvas id="g18Chart2" width="600" height="600"></canvas>
+           
 
             <p>Glock é uma série de pistolas semiautomáticas com armação de polímero, com sistema de funcionamento por curto recuo basculante do cano, com culatra no sistema Delayed Blowback. Projetada e produzida pela fabricante austríaca Glock Ges.m.b.H.<br>
                 No jogo, a Glock-18 é a arma de spawn do lado TR, e ela possui uma precisão boa e um dano letal no hs a curtas distâncias, porém, a longas distâncias ela não é fatal como a USP-S ou a P2000 do lado CT. Junto da FAMAS a Glock-18 é unica pistola
@@ -741,10 +741,10 @@
             <p><b>Rate of fire:</b> 85 (botão esquerdo)/1200 RPM (botão direito)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="r8Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="r8Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="r8Chart" width="600" height="600"></canvas>
+                <canvas id="r8Chart2" width="600" height="600"></canvas>
+            
 
             <p>O R8 Revolver, conhecido na vida real como Smith & Wesson Model 327 Performance Center M&P R8, é a terceira pistola a ser introduzida na Global Offensive desde o lançamento do jogo no varejo.<br>
                 Pode ser trocada pela Desert Eagle no jogo. O revólver tem uma capacidade muito baixa, tendo 8 cartuchos por tambor e apenas um tambor de munição (8 cartuchos) na reserva. Atualmente, é a 
@@ -771,10 +771,10 @@
             <p><b>Rate of fire:</b> 750 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="mp5Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="mp5Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="mp5Chart" width="600" height="600"></canvas>
+                <canvas id="mp5Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Heckler & Koch MP5 é uma submetralhadora, 9mm de projeto alemão, desenvolvido na década de 1960 por uma equipe de engenheiros alemães de armas pequenas fabricada pela empresa alemã Heckler & Koch GmbH da Oberndorf am Neckar.
                 Existem mais de 100 variantes do MP5, incluindo uma versão semiautomática.<br>
@@ -797,10 +797,10 @@
             <p><b>Rate of fire:</b> 857 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="p90Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="p90Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="p90Chart" width="600" height="600"></canvas>
+                <canvas id="p90Chart2" width="600" height="600"></canvas>
+            
 
             <p>A FN P90 é uma submetralhadora de defesa pessoal compacta de 5,7×28mm, projetada e fabricada pela FN Herstal, na Bélgica.<br>
                 A P90 não é usada no alto-nível por conta do seu alto custo, porém nos níveis baixos do cs ela é muito utilizada por conta do seu estilo de jogo que favorece o rush. Ela possui um dano baixo,
@@ -821,10 +821,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="ump45Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="ump45Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="ump45Chart" width="600" height="600"></canvas>
+                <canvas id="ump45Chart2" width="600" height="600"></canvas>
+            
 
             <p>A UMP é uma submetralhadora desenvolvida e fabricada pela empresa alemã Heckler & Koch. A UMP é usada por várias organizações e agências governamentais pelo mundo, sendo muito usada por forças especiais.<br>
                 No jogo, ela tem a mobilidade um pouco menor comparado a P90, porém possui uma penetração a colete maior, e sua recompensa por kill é de $600. Até 2018 ela era a arma do meta nos anti-ecos, mas hoje em dia ela 
@@ -845,10 +845,10 @@
             <p><b>Rate of fire:</b> 750 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="mp7Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="mp7Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="mp7Chart" width="600" height="600"></canvas>
+                <canvas id="mp7Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Heckler & Koch MP7 é uma arma de defesa pessoal que dispara o cartucho perfurante HK 4,6×30mm projetada pela fabricante alemã Heckler & Koch.<br>
                 No jogo, o MP7 tem capacidade para 30 tiros, carrega grandes 120 tiros de reserva e (apesar de sua descrição) custa relativamente barato $ 1500, embora comparado ao resto da classe SMG seja a segunda opção mais cara.<br>
@@ -869,10 +869,10 @@
             <p><b>Rate of fire:</b> 750 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="bizonChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="bizonChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="bizonChart" width="600" height="600"></canvas>
+                <canvas id="bizonChart2" width="600" height="600"></canvas>
+            
 
             <p>A PP-19 Bizon é uma submetralhadora desenvolvida na década de 1990 por uma equipe de engenheiros chefiada por Victor Kalashnikov. <br>
                 Com seu carregador de 64 tiros, a Bizon tem o maior carregador e capacidade de reserva de todas as SMGs e entre a maioria das armas. É leve, barata, tem rate of fire alto, baixo recuo e recarrega rapidamente.
@@ -894,10 +894,10 @@
             <p><b>Rate of fire:</b> 857 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="mp9Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="mp9Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="mp9Chart" width="600" height="600"></canvas>
+                <canvas id="mp9Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Brügger & Thomet MP9 é uma pistola-metralhadora projetada e fabricada pela Brügger & Thomet da Suíça. A MP9 é uma pistola-metralhadora de fogo seletivo que utiliza munição de pistola 9x19mm Parabellum. 
                 Ela usa carregadores destacáveis de polímero transparente com capacidade para 15, 20, 25 e 30 cartuchos.<br>
@@ -920,10 +920,10 @@
             <p><b>Rate of fire:</b> 800 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="mac10Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="mac10Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="mac10Chart" width="600" height="600"></canvas>
+                <canvas id="mac10Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Ingram MAC-10 é uma submetralhadora muito compacta, desenvolvida por Gordon B. Ingram em 1964. <br>
                 No jogo, a MAC-10 é uma metralhadora moderadamente poderosa disponível apenas para os Terroristas. Tem uma taxa de tiro muito alta e dano médio, e é uma opção relativamente barata ($ 1600 em jogos anteriores e $ 1050 no CS:GO).
@@ -947,10 +947,10 @@
             <p><b>Rate of fire:</b> 171 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="xm1014Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="xm1014Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="xm1014Chart" width="600" height="600"></canvas>
+                <canvas id="xm1014Chart2" width="600" height="600"></canvas>
+            
 
             <p>A Benelli XM1014 é uma espingarda semiautomática italiana manufaturada pela Benelli Armi SpA.<br>
                 Em todos os jogos, é a opção de 12 mais cara, com $3000 em jogos anteriores e $2000 no CS:GO. Isso torna a 12 menos viável como opção econômica. Ele também tem uma alta recompensa de morte ($900), facilitando a recuperação econômica.<br>
@@ -973,10 +973,10 @@
             <p><b>Rate of fire:</b> 68 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="novaChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="novaChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="novaChart" width="600" height="600"></canvas>
+                <canvas id="novaChart2" width="600" height="600"></canvas>
+            
 
             <p>A Benelli Nova é uma espingarda italiana. No jogo, ele contém 8 munições de cartuchos de espingarda de calibre 12.<br>
                 É a 12 mais barata do jogo, ela possui um poder de fogo baixo mas é um investimento viável no jogo tendo em vista que seu recompensa por kill
@@ -999,10 +999,10 @@
             <p><b>Rate of fire:</b> 71 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="mag7Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="mag7Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="mag7Chart" width="600" height="600"></canvas>
+                <canvas id="mag7Chart2" width="600" height="600"></canvas>
+           
 
             <p>A MAG-7 é uma espingarda sul-africana fabricada pela Techno Arms PTY desde 1995. É única por ter uma forma relativamente compacta para uma espingarda e dispara um projétil 
             especializado de calibre 12 de 60 mm, que é produzido de forma bastante incomum. Na vida real, a arma é infamemente ineficaz e não confiável; a ergonomia é ruim, a pressão do 
@@ -1028,10 +1028,10 @@
             <p><b>Rate of fire:</b> 71 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="canocurtoChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="canocurtoChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="canocurtoChart" width="600" height="600"></canvas>
+                <canvas id="canocurtoChart2" width="600" height="600"></canvas>
+            
 
             <p>A Cano-curto é uma espingarda Remington 870 modificada com um cano mais curto e 'serrado'. O termo "Sawed-Off" (também chamado de Sawn-off no Reino Unido e países da Commonwealth) significa encurtar o cano e o estoque de um rifle e espingardas, 
                 tornando-os mais fáceis de usar em locais apertados. Espingardas de cano serrado normalmente têm um comprimento de arma inferior a 18 polegadas e o cano encurtado também dará à arma um efeito de dispersão maior se o usuário disparar chumbo grosso. 
@@ -1056,10 +1056,10 @@
             <p><b>Rate of fire:</b> 600 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="m249Chart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="m249Chart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+            
+                <canvas id="m249Chart" width="600" height="600"></canvas>
+                <canvas id="m249Chart2" width="600" height="600"></canvas>
+            
 
             <p>M249 é a designação de uma metralhadora leve padrão do Exército Americano, criada no fim da década de 1970. Esta arma também é usada pelo Corpo de Fuzileiros Navais do Brasil convencionada pelo nome de "minimi", 
                 em suas unidades infantaria. E sua versão "PARA" é utilizada por elementos de operações especiais.<br>
@@ -1079,10 +1079,10 @@
             <p><b>Rate of fire:</b> 800 RPM (Rounds per minute)</p>
         </section>
 
-            <div id="gunGraph">
-                <canvas id="negevChart" width="600" height="600" style="display: block;"></canvas>
-                <canvas id="negevChart2" width="600" height="600" style="display: block;"></canvas>
-            </div>
+           
+                <canvas id="negevChart" width="600" height="600"></canvas>
+                <canvas id="negevChart2" width="600" height="600"></canvas>
+            
 
             <p>O IWI Negev é uma metralhadora leve da OTAN de 5,56 × 45mm desenvolvida pela Israel Weapon Industries, anteriormente conhecida como Israel Military Industries Ltd. Em 2012, a IWI introduziu a metralhadora de uso geral 
                 Negev NG-7 7,62 × 51 mm OTAN e é usada pelas Forças de Defesa de Israel.<br>
@@ -1095,6 +1095,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/o7Qk1zuhKj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
+    <a href="#topo"><img id="voltarTopo" src="./imagens/de-volta-ao-topo.png" alt="voltar_ao_topo" title="Voltar para o topo"></a>
     <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
 </body>
 </html>
