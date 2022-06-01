@@ -135,12 +135,13 @@ a {
      margin-left: 2%;
     width: 200px;
 }
+
 footer {
-    margin-top: 5%;
     display: flex;
     color: #de9b35;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
     margin-bottom: 10%;
     height: 200px;
     background-color: #0c0f12;

@@ -630,7 +630,7 @@
             <h3>Video guia da arma:</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ruWrhpLmIuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div id="infoUsp" class="info" style="display: flex;">
+    <div id="infoUsp" class="info" style="display: none;">
         <h1>USP-S</h1>
         <section class="macro_info">
             <p><b>Valor:</b> $200</p>
@@ -729,6 +729,7 @@
 
             <h3>Video guia da arma:</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Dh6DzMtg4ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div id="infoR8" class="info" style="display: none;">
         <h1>R8 Revolver</h1>
         <section class="macro_info">
@@ -755,7 +756,7 @@
             </p>
 
             <h3>Video guia da arma:</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dh6DzMtg4ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BnnFPtdD45E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <!-- Sub-metralhadoras -->
@@ -1649,4 +1650,553 @@ let uspRadar2 = new Chart(usp_chart2, {
     }
 })
 
+const five7_chart = document.getElementById("five7Chart").getContext('2d');
+
+let five7Radar = new Chart(five7_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [126, 31, 39, 23]
+        }]
+    }
+})
+
+const five7_chart2 = document.getElementById("five7Chart2").getContext('2d');
+
+let five7Radar2 = new Chart(five7_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [115, 28, 36, 23]
+        }]
+    }
+})
+
+const tec9_chart = document.getElementById("tec9Chart").getContext('2d');
+
+let tec9Radar = new Chart(tec9_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [130, 32, 40, 24]
+        }]
+    }
+})
+
+const tec9_chart2 = document.getElementById("tec9Chart2").getContext('2d');
+
+let tec9Radar2 = new Chart(tec9_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [118, 29, 36, 24]
+        }]
+    }
+})
+
+const g18_chart = document.getElementById("g18Chart").getContext('2d');
+
+let g18Radar = new Chart(g18_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [119, 29, 37, 22]
+        }]
+    }
+})
+
+const g18_chart2 = document.getElementById("g18Chart2").getContext('2d');
+
+let g18Radar2 = new Chart(g18_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [56, 14, 17, 22]
+        }]
+    }
+})
+
+const r8_chart = document.getElementById("r8Chart").getContext('2d');
+
+let r8Radar = new Chart(r8_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [343, 85, 107, 64]
+        }]
+    }
+})
+
+const r8_chart2 = document.getElementById("r8Chart2").getContext('2d');
+
+let r8Radar2 = new Chart(r8_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [319, 79, 99, 64]
+        }]
+    }
+})
+//Fim dos graficos das pistolas
+
+//Começo dos gráficos das SMGS
+const mp5_chart = document.getElementById("mp5Chart").getContext('2d');
+
+let mp5Radar = new Chart(mp5_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [107, 26, 33, 20]
+        }]
+    }
+})
+
+const mp5_chart2 = document.getElementById("mp5Chart2").getContext('2d');
+
+let mp5Radar2 = new Chart(mp5_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [66, 16, 20, 20]
+        }]
+    }
+})
+
+const p90_chart = document.getElementById("p90Chart").getContext('2d');
+
+let p90Radar = new Chart(p90_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [103, 25, 32, 19]
+        }]
+    }
+})
+
+const p90_chart2 = document.getElementById("p90Chart2").getContext('2d');
+
+let p90Radar2 = new Chart(p90_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [71, 17, 22, 19]
+        }]
+    }
+})
+
+const ump45_chart = document.getElementById("ump45Chart").getContext('2d');
+
+let ump45Radar = new Chart(ump45_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [140, 35, 43, 25]
+        }]
+    }
+})
+
+const ump45_chart2 = document.getElementById("ump45Chart2").getContext('2d');
+
+let ump45Radar2 = new Chart(ump45_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [90, 22, 28, 25]
+        }]
+    }
+})
+
+const mp7_chart = document.getElementById("mp7Chart").getContext('2d');
+
+let mp7Radar = new Chart(mp7_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [115, 28, 35, 21]
+        }]
+    }
+})
+
+const mp7_chart2 = document.getElementById("mp7Chart2").getContext('2d');
+
+let mp7Radar2 = new Chart(mp7_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [71, 17, 22, 21]
+        }]
+    }
+})
+
+const bizon_chart = document.getElementById("bizonChart").getContext('2d');
+
+let bizonRadar = new Chart(bizon_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [343, 85, 107, 64]
+        }]
+    }
+})
+
+const bizon_chart2 = document.getElementById("bizonChart2").getContext('2d');
+
+let bizonRadar2 = new Chart(bizon_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [319, 79, 99, 64]
+        }]
+    }
+})
+
+const mp9_chart = document.getElementById("mp9Chart").getContext('2d');
+
+let mp9Radar = new Chart(mp9_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [104, 26, 32, 19]
+        }]
+    }
+})
+
+const mp9_chart2 = document.getElementById("mp9Chart2").getContext('2d');
+
+let mp9Radar2 = new Chart(mp9_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [61, 15, 19, 19]
+        }]
+    }
+})
+
+const mac10_chart = document.getElementById("mac10Chart").getContext('2d');
+
+let mac10Radar = new Chart(mac10_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [114, 28, 35, 21]
+        }]
+    }
+})
+
+const mac10_chart2 = document.getElementById("mac10Chart2").getContext('2d');
+
+let mac10Radar2 = new Chart(mac10_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [65, 16, 20, 21]
+        }]
+    }
+})
+//Fim dos graficos das SMGs
+
+//Começo dos graficos das 12zes
+const xm1014_chart = document.getElementById("xm1014Chart").getContext('2d');
+
+let xm1014Radar = new Chart(xm1014_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [80, 20, 25, 15]
+        }]
+    }
+})
+
+const xm1014_chart2 = document.getElementById("xm1014Chart2").getContext('2d');
+
+let xm1014Radar2 = new Chart(xm1014_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [64, 16, 20, 15]
+        }]
+    }
+})
+
+const nova_chart = document.getElementById("novaChart").getContext('2d');
+
+let novaRadar = new Chart(nova_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [106, 26, 32, 19]
+        }]
+    }
+})
+
+const nova_chart2 = document.getElementById("novaChart2").getContext('2d');
+
+let novaRadar2 = new Chart(nova_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [52, 13, 16, 19]
+        }]
+    }
+})
+
+const mag7_chart = document.getElementById("mag7Chart").getContext('2d');
+
+let mag7Radar = new Chart(mag7_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [120, 30, 37, 22]
+        }]
+    }
+})
+
+const mag7_chart2 = document.getElementById("mag7Chart2").getContext('2d');
+
+let mag7Radar2 = new Chart(mag7_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [90, 22, 28, 22]
+        }]
+    }
+})
+
+const canocurto_chart = document.getElementById("canocurtoChart").getContext('2d');
+
+let canocurtoRadar = new Chart(canocurto_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [128, 32, 40, 24]
+        }]
+    }
+})
+
+const canocurto_chart2 = document.getElementById("canocurtoChart2").getContext('2d');
+
+let canocurtoRadar2 = new Chart(canocurto_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [96, 24, 30, 24]
+        }]
+    }
+})
+//Fim dos graficos das 12zes
+
+//Começo dos graficos das LMGs
+const m249_chart = document.getElementById("m249Chart").getContext('2d');
+
+let m249Radar = new Chart(m249_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [128, 32, 30, 24]
+        }]
+    }
+})
+
+const m249_chart2 = document.getElementById("m249Chart2").getContext('2d');
+
+let m249Radar2 = new Chart(m249_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [102, 25, 32, 24]
+        }]
+    }
+})
+
+const negev_chart = document.getElementById("negevChart").getContext('2d');
+
+let negevRadar = new Chart(negev_chart, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano sem colete',
+            backgroundColor: '#de9a35c4',
+            borderColor: 'orange',
+            borderWidth: 2,
+            data: [140, 35, 43, 26]
+        }]
+    }
+})
+
+const negev_chart2 = document.getElementById("negevChart2").getContext('2d');
+
+let negevRadar2 = new Chart(negev_chart2, {
+    type: 'radar',
+    data: {
+        labels: ['Cabeça', 'Torso e braços', 'Estomago e pelvis', 'Pernas'],
+        datasets: [{
+            label: 'Dano com colete',
+            backgroundColor: '#0000FFc4',
+            borderColor: '#0000FF',
+            borderWidth: 2,
+            data: [99, 24, 31, 26]
+        }]
+    }
+})
 </script>
