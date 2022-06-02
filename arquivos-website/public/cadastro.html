@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <title>CS:PEDIA | Cadastro</title>
+    <link rel="stylesheet" href="./CSS/cadastro.css">
+</head>
+<body>
+    <header>
+        <img src="./imagens/logo_laranja.png" alt="" height="40">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html"><b>Cadastro</b></a>
+        </nav>
+    </header>
+
+    
+    <div id="form">
+<!--         <div id="logo">
+            <img src="/imagens/webSite_logo.png" alt="logo_cspedia" width="500px">
+        </div>   -->
+    </div>
+    <form>
+        <h2>Cadastro</h2>
+            <label for="input_nickname">Nickname</label>
+            <input type="text" id="input_nickname" placeholder="Digite seu nickname">
+            <span id="erro_nick" style="color: red;"></span>
+
+            <label for="input_email">Email</label>
+            <input type="email" id="input_email" placeholder="Digite seu e-mail">
+            <span id="erro_email" style="color: red;"></span>
+
+            <label for="input_senha">Senha</label>
+            <input type="password" id="input_senha" placeholder="Digite sua senha">
+            <span id="erro_senha" style="color: red;"></span>
+
+            <label for="input_confSenha">Confirmação de senha</label>
+            <input type="password" id="input_confSenha" placeholder="Digite novamente sua senha">
+            <span id="erro_conf_senha" style="color: red;"></span>
+
+            <label for="input_indic">Nickname de quem indicou</label>
+            <input type="text" id="input_indicado" placeholder="Opcional">
+
+            <button onclick="cadastrar()" type="button">Cadastrar</button>
+    </form>
+
+    <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
+</body>
+</html>
+
+<script>
+    function cadastrar(){
+        var nickName = String(input_nickname.value.trim());
+        var email = String(input_email.value.trim());
+        var senha = String(input_senha.value.trim());
+        var confSenha = String(input_confSenha.value.trim());
+        var indicado = String(input_indicado.value.trim());
+
+        var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[0-9]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
+
+        if(nickName.length < 3){
+            erro_nick.innerHTML = '*Insira 3 ou mais caracteres'
+            input_nickname.style.borderColor = 'red'
+        } else {
+            erro_nick.innerHTML = ''
+            input_nickname.style.borderColor = 'greenyellow'
+        } 
+
+        if (email.indexOf("@") > 3 && email.endsWith(".com.br") || email.endsWith(".com"))  {
+            input_email.style.borderColor = 'greenyellow'
+            erro_email.innerHTML = ''
+        } else {
+            erro_email.innerHTML = '*Insira "@" e terminação .com, por exemplo'
+            input_email.style.borderColor = 'red'
+        }
+
+        if (senha.length < 8 || senha.length == 0) {
+            erro_senha.innerHTML = '*Insira 8 caracteres, 1 número, letra maiúscula, minúscula e 1 caractere especial'
+            input_senha.style.borderColor = 'red'
+        } else if (!regex.exec(senha)) {
+            input_senha.style.borderColor = 'red'
+            erro_senha.innerHTML = '*Insira 8 caracteres, 1 número, letra maiúscula, minúscula e 1 caractere especial'
+        } else {
+            erro_senha.innerHTML = ''
+            input_senha.style.borderColor = 'greenyellow'
+        }
+
+        if (confSenha == '') {
+            input_confSenha.style.borderColor = "red"
+            erro_conf_senha.innerHTML = '*Digite uma senha'
+        }
+        else if (confSenha != senha || confSenha.length < 8) {
+            input_confSenha.style.borderColor = "red"
+            erro_conf_senha.innerHTML = '*Senha diferente'
+        }
+        else {
+            erro_conf_senha.innerHTML = ''
+            input_confSenha.style.borderColor = "greenyellow"
+        }
+
+        function cadastrar() {
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nickNameServer: nickName,
+                emailServer: email,
+                senhaServer: senha,
+                confirmarServer: confSenha,
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.location = "login.html"
+
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+
+        });
+
+        return false;
+    }
+    }
+</script>
