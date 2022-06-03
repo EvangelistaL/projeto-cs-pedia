@@ -1,7 +1,11 @@
-function mostrarDados(idGun, graficos){
+function mostrarDados(dados, grafico, grafico2){
     esconderDados()
-    document.getElementById(graficos).style.display = 'flex'
-}
+    document.getElementById(dados).style.display = 'flex'
+    document.getElementById('gunGraph').style.width = '600px'
+    document.getElementById('gunGraph').style.heigth = '600px'
+    document.getElementById(grafico).style.width = '500px'
+    document.getElementById(grafico2).style.heigth = '500px'
+}2
 
 function esconderDados(){
     document.getElementById('infoAk').style.display = 'none'

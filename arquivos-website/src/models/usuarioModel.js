@@ -24,7 +24,7 @@ function cadastrar(nickName, email, senha, indicado) {
     
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
-    if (indicado == null){
+    if (indicado == ''){
        var instrucao = `INSERT INTO usuarios (nick_name, email, senha, fkIndicacao) VALUES ('${nickName}', '${email}', '${senha}', null);` 
        console.log("Executando a instrução SQL: \n" + instrucao);
         return database.executar(instrucao);

@@ -37,6 +37,7 @@ a {
     text-decoration: none;
     transition: 0.5s;
     margin-right: 10%;
+    margin-left: 10%;
 }
 
 .gunBox::-webkit-scrollbar{
@@ -111,7 +112,7 @@ a {
 
  .info {
      margin-top: 5%;
-     display: flex;
+     display: none;
      flex-direction: column;
      align-items: center;
      background-color: #0c0f123b;
@@ -140,7 +141,7 @@ a {
 
 #voltarTopo{
     position: fixed;
-    bottom: 200px;
+    bottom: 100px;
     right: 50px;
 }
 
