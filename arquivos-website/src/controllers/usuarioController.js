@@ -66,22 +66,23 @@ function cadastrar(req, res) {
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     var confSenha = req.body.confirmarServer;
+    var indicado = req.body.indicadoServer;
     var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[0-9]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
 
     // Faça as validações dos valores
     if (nickName.length < 3) {
         res.status(400).send("Seu nome está invalido!");
-    } else if (email.indexOf("@") > 3 && email.endsWith(".com.br") || email.endsWith(".com")) {
+    } else if (email.indexOf("@") < -1 && email.endsWith(".com.br") < -1 || email.endsWith(".com") < -1) {
         res.status(400).send("Seu email está ivalido!");
     } else if (senha.length < 8 || !regex.exec(senha)) {
-        res.status(400).send("Sua senha está invalido!");
+        res.status(400).send("Sua senha está invalida!");
     } else if(confSenha != senha){
         res.status(400).send("Sua confirmação de senha está diferente da senha!");
     }
     else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nickName, email, senha)
+        usuarioModel.cadastrar(nickName, email, senha, indicado)
             .then(
                 function (resultado) {
                     res.json(resultado);

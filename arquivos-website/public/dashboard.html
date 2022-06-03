@@ -10,14 +10,14 @@
     <link rel="manifest" href="./favicon_io/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
     <title>CS:PEDIA | Dashboards</title>
-    <link rel="stylesheet" href="../arquivos-website/CSS/dashboard.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
 </head>
-<body>
+<body onload="validarSessao()">
     <header id="topo">
         <img src="./imagens/logo_laranja.png" alt="" height="40">
         <nav>
-            <span>Bem vindo <b>usuario</b></span>
-            <a href=""><b>Sair</b></a>
+            <span>Bem vindo <b id="user_name">usuario</b></span>
+            <a onclick="logOff()"><b>Sair</b></a>
         </nav>
     </header>
 
@@ -122,11 +122,11 @@
         <div class="gunBox">
         <section>
             <h4>MP5-SD</h4>
-            <img src="./imagens/mp5png.png" alt="mp5_png" id="mp5" onclick="mostrarDados('infoMp5')">
+            <img src="./imagens/mp5png.png" alt="mp5_png" id="mp5" onclick="mostrarDados('mp5','infoMp5')">
         </section>
         <section>
             <h4>P90</h4>
-            <img src="./imagens/p90png.webp" alt="p90_png" id="p90" onclick="mostrarDados('infop90')">
+            <img src="./imagens/p90png.webp" alt="p90_png" id="p90" onclick="mostrarDados('p90','infop90')">
         </section>
         <section>
             <h4>UMP-45</h4>

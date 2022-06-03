@@ -63,7 +63,6 @@ form {
 
 form input{
     margin-top: 2%;
-    margin-bottom: 7%;
     color: #de9b35;
     background-color: #0c0f12;
     border: #de9b35 solid 2px;
@@ -80,6 +79,7 @@ form button {
     width: 100px;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 5%;
 }
 
 form p{
@@ -91,6 +91,11 @@ button:hover{
     transition: 1s;
     width: 105px;
     height: 40px;
+}
+
+form span {
+    font-size: 13px;
+    margin-bottom: 3%;
 }
 
 footer {
