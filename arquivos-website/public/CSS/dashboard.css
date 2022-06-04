@@ -16,6 +16,11 @@ header {
     height: 100px;
 }
 
+header span{
+    align-self: center;
+    justify-self: center;
+}
+
 header nav {
     text-decoration: none;
     display: flex;
@@ -23,6 +28,7 @@ header nav {
     align-items: center;
     margin-right: 5%;
 }
+
 header img {
     display: flex;
     align-self: center;

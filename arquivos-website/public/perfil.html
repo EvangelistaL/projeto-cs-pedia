@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <title>CS:PEDIA | Perfil</title>
+    <link rel="stylesheet" href="./CSS/perfil.css">
+</head>
+<body>
+    <header>
+        <img src="./imagens/logo_laranja.png" alt="" height="40">
+        <span>Bem vindo <b id="user_name">usuario</b></span>
+        <nav>
+            <a href="./dashboard.html">Info armas</a>
+            <a onclick="logOff()"><b>Sair</b></a>
+    </header>
+
+    <div id="box_perfil">
+        <form enctype="multipart/form-data">
+            <section class="foto_usuario">
+                <img src="./imagens/silverIcon.png" alt="default" width="200px" id="user_image">
+            </section>
+        </form>
+        <section class="dados_usuario">
+            <h3 id="user_name2">Usuario</h3>
+            <p>Indicou <span id="quantidade_indicado">0</span> pessoas para o CS:PEDIA</p>
+            <b>Ranking: <span id="ranking_texto">Prata elite</span></b>
+            <img src="./imagens/prata_elite.jpg" alt="ranking" id="ranking">
+        </section>
+    </div>
+
+    <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
+</body>
+</html>
+
+<!-- <script src="./JS/dashboard.js"></script> -->
+<script>
+
+    function validarSessao() {
+    // aguardar();
+
+    var email = sessionStorage.EMAIL_USUARIO;
+    var nome = sessionStorage.NOME_USUARIO;
+    var id= sessionStorage.ID_USUARIO;
+
+    var h1LoginUsuario = document.getElementById("h1_login_usuario");    
+
+    if (email != null && nome != null) {
+        // window.alert(`Seja bem-vindo, ${nome}!`);
+        if (h1LoginUsuario != undefined) {
+            h1LoginUsuario.innerHTML = email;
+        }
+        console.log(nome)
+        user_name.innerHTML = nome;
+        user_name2.innerHTML = nome;
+
+        // finalizarAguardar();
+    } else {
+        window.location = "./login.html";
+    }
+}
+
+    window.onload = function recomendacoes(){
+        validarSessao()
+        var indicacoes = document.getElementById("quantidade_indicado");
+
+        fetch("/usuarios/listar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nickNameServer: sessionStorage.NOME_USUARIO,
+                
+            }),
+        })
+            .then(function (resposta) {
+                console.log("ESTOU NO THEN DO entrar()!");
+
+                if (resposta.ok) {
+                    console.log(resposta);
+                    resposta.json().then((json) => {
+                        console.log(json[0])
+                        indicacoes.innerHTML = Number(json[0].Indicacoes);
+
+                        if (Number(json[0].Indicacoes) < 3){
+                            user_image.setAttribute('src', './imagens/silverIcon.png')
+                            ranking.setAttribute('src', './imagens/prata_elite.jpg')
+                            ranking_texto.innerHTML = 'Prata Elite'
+                        } else if(Number(json[0].Indicacoes) < 3){
+                            user_image.setAttribute('src', './imagens/goldIcon.jpg')
+                            ranking.setAttribute('src', './imagens/ouro_mestre.jpg')
+                            ranking_texto.innerHTML = 'Ouro mestre'
+                        }else if (Number(json[0].Indicacoes) > 6) {
+                            user_image.setAttribute('src', './imagens/akxIcon.png')
+                            ranking.setAttribute('src', './imagens/akX.png')
+                            ranking_texto.innerHTML = 'Guardião mestre'
+                        } else if (Number(json[0].Indicacoes) > 9){
+                            user_image.setAttribute('src', './imagens/aguiaIcon.png')
+                            ranking.setAttribute('src', './imagens/aguia2.png')
+                            ranking_texto.innerHTML = 'Aguia lendaria'
+                        } else if (Number(json[0].Indicacoes) > 10 && Number(json[0].Indicacoes) <= 12){
+                            user_image.setAttribute('src', './imagens/supremoIcon.png')
+                            ranking.setAttribute('src', './imagens/supremo.png')
+                            ranking_texto.innerHTML = 'Supremo'
+                        } else {
+                            user_image.setAttribute('src', './imagens/GlobalIcon.png')
+                            ranking.setAttribute('src', './imagens/globalElite.png')
+                            ranking_texto.innerHTML = 'Global Elite'
+                        }
+                    });
+                } else {
+                    console.log("Houve um erro ao contar indicacoes!");
+                }
+            })
+            .catch(function (erro) {
+                console.log(erro);
+            });
+
+        return false;
+    } 
+
+</script>

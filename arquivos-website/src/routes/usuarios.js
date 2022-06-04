@@ -1,5 +1,7 @@
 var express = require("express");
 var router = express.Router();
+const multer = require("multer");
+const upload = multer({ dest: 'uploads/' })
 
 var usuarioController = require("../controllers/usuarioController");
 
@@ -7,7 +9,7 @@ router.get("/", function (req, res) {
     usuarioController.testar(req, res);
 });
 
-router.get("/listar", function (req, res) {
+router.post("/listar", function (req, res) {
     usuarioController.listar(req, res);
 });
 
@@ -19,5 +21,9 @@ router.post("/cadastrar", function (req, res) {
 router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
+
+router.post("/uploadImagem", upload.single("avatar"), function (req, res){
+    usuarioController.uparImagem(req, res);
+})
 
 module.exports = router;

@@ -5,7 +5,7 @@ function mostrarDados(dados, grafico, grafico2){
     document.getElementById('gunGraph').style.heigth = '600px'
     document.getElementById(grafico).style.width = '500px'
     document.getElementById(grafico2).style.heigth = '500px'
-}2
+}
 
 function esconderDados(){
     document.getElementById('infoAk').style.display = 'none'
@@ -58,6 +58,7 @@ function validarSessao() {
         if (h1LoginUsuario != undefined) {
             h1LoginUsuario.innerHTML = email;
         }
+        console.log(nome)
         user_name.innerHTML = nome;
 
         // finalizarAguardar();
