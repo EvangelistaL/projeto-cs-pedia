@@ -1,2 +1,3 @@
-# projeto-cs-pedia
-Uma API sobre cs
+## Projeto CS:PEDIA
+
+Um website com informações sobre CS:GO
