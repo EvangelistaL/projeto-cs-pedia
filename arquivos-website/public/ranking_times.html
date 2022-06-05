@@ -28,7 +28,7 @@
 
     <div id="box_times">
         <div id="time">
-            <section class="nome_logo">
+            <section class="nome_logo" onclick="mostrar_info('furia')">
                 <h4>1#</h4>
                 <img src="https://img-cdn.hltv.org/teamlogo/mvNQc4csFGtxXk5guAh8m1.svg?ixlib=java-2.1.0&s=11e5056829ad5d6c06c5961bbe76d20c" alt="">
                 <p>FURIA</p>
@@ -58,16 +58,23 @@
                 </div>
                 <br>
                 <span><b>Técnico:</b> Guerri</span>
+                <p class="hist">O que é a FURIA Esports?
+                    A FURIA Esports é uma organização brasileira de esports formada em fevereiro de 2017, que possui um time de Counter-Strike: Global Offensive (CS:GO)
+                    e disputa os maiores campeonatos do mundo.<br>
+                    Atualmente eles são o melhor time do Brasil e top 7 no ranking mundial da HLTV.org e no ultimo major conseguiram o status de legends (que classifica automaticamente)
+                    para o proximo major) e foram 4º/5º nesse mesmo major.<br>
+                    o ultimo campeonato que eles ganharam foi o Elisa Invitational Summer 2021 e até o momento estão sem nenhum título.
+                </p>
             </div>
         </div>
 
         <div id="time">
-            <section class="nome_logo">
+            <section class="nome_logo" onclick="mostrar_info('imperial')">
                 <h4>2#</h4>
                 <img src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=50&s=ecc0a33173ed783477ab8be4cfa6e215" alt="">
                 <p>Imperial</p>
             </section>
-            <div class="time_info" id="imperial">
+            <div class="time_info" id="imperial" style="display: none;">
                 <div class="time_fotos">
                     <section>
                         <p>fnx</p>
@@ -92,16 +99,26 @@
                 </div>
                     <br>
                     <span><b>Técnico:</b> Peacemaker</span>
+
+                    <p class="hist">A imperial surgiu em 09/03/2018, fundada pelo felippe1, um ex jogador profissional de FPS.
+                        Na sua inauguração a line up era: SHOOWTiME, zqk, shz, tifa e dzt. Jogadores que experientes
+                        que já autuaram internacionalmente. E também já passaram por lá fnx e fer anteriormente.<br>
+                        No dia 18/02/2022 eles anunciaram que seu time seria o então nomeado "The last dance", formado
+                        pelo FalleN, fnx, fer, boltz e VINI para atuar no cenário norte americano. E em 3 meses de time
+                        eles conseguiram um marco historico, que foi ganhar uma melhor de 3 do top 4 time do mundo (Cloud9)
+                        na fase de grupos do PGL Major Antwerp, até então eles não estavam no ranking mundial mas após esse e outros
+                        resultados deixaram eles na 14º posição de melhores times do mundo de counter-strike.
+                    </p>
             </div>
         </div>
 
         <div id="time">
-            <section class="nome_logo">
+            <section class="nome_logo" onclick="mostrar_info('pain')">
                 <h4>3#</h4>
                 <img src="https://img-cdn.hltv.org/teamlogo/x7znFH8_QjLXOQRyR2y7Xp.png?ixlib=java-2.1.0&w=50&s=e4435bf7c351b546b867adc1d7886795" alt="">
                 <p>paiN</p>
             </section>
-            <div class="time_info" id="pain">
+            <div class="time_info" id="pain" style="display: none;">
                 <div class="time_fotos">
                     <section>
                         <p>PKL</p>
@@ -131,12 +148,12 @@
     
 
     <div id="time">
-        <section class="nome_logo">
+        <section class="nome_logo" onclick="mostrar_info('mibr')">
             <h4>4#</h4>
             <img src="https://img-cdn.hltv.org/teamlogo/m_JQ624LNFHWiUY-25uuaE.png?ixlib=java-2.1.0&w=100&s=bbcc329085294daa8e8a7111850b331b" alt="">
             <p>MIBR</p>
         </section>
-        <div class="time_info" id="mibr">
+        <div class="time_info" id="mibr" style="display: none;">
             <div class="time_fotos">
                 <section>
                     <p>chelo</p>
@@ -165,12 +182,12 @@
     </div>
 
     <div id="time">
-        <section class="nome_logo">
+        <section class="nome_logo" onclick="mostrar_info('godsent')">
             <h4>5#</h4>
             <img src="https://img-cdn.hltv.org/teamlogo/WQl1L0NmsdhupV8S-fzQvA.svg?ixlib=java-2.1.0&s=7550f0c714f66781c2545e633ea582e2" alt="">
             <p>GODSENT</p>
         </section>
-        <div class="time_info" id="godsent">
+        <div class="time_info" id="godsent" style="display: none;">
             <div class="time_fotos">    
                 <section>
                     <p>HEN1</p>
@@ -193,12 +210,14 @@
                     <img src="https://img-cdn.hltv.org/playerbodyshot/kZYC8PntdHx_-HnR3eFwTY.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C4%2C467%2C467&w=200&s=38d3dafd41e9f1aa994a394c049ab94a" alt="">
                 </section>
             </div>
+            <br>
+            <span><b>Técnico:</b> chucky</span>
         </div>
-        <br>
-        <span><b>Técnico:</b> chucky</span>
     </div>
 </div>
 
     <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
 </body>
 </html>
+
+<script src="./JS/ranking_times.js"></script>
