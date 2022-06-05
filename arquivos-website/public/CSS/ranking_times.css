@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    background-color: #121930;
+    color: #de9b35;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0c0f12;
+    height: 100px;
+}
+
+header span{
+    align-self: center;
+    justify-self: center;
+}
+
+header nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+header img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 50px;
+    margin-left: 5%;
+}
+
+a {
+    font-size: 18px;
+    color: #de9b35;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3%;
+    background-color: #0c0f123b;
+    width: 85%;
+    margin-left: 10%;
+}
+
+#time .nome_logo{
+    display: flex;
+    flex-direction: row;
+}
+
+#time .nome_logo img{
+    margin: 0 25px 0;
+    width: 50px;
+    height: 50px;
+}
+
+#time .time_info .time_fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#time .time_info section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    color: #de9b35;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 200px;
+    background-color: #0c0f12;
+}
+
+footer p {
+    border-bottom: solid 2px #de9b35;
+}

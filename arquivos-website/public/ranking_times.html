@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <title>CS:PEDIA | Ranking Times</title>
+    <link rel="stylesheet" href="./CSS/ranking_times.css">
+</head>
+<body>
+    <header>
+        <img src="./imagens/logo_laranja.png" alt="" height="40">
+        <span>Bem vindo <b id="user_name">usuario</b></span>
+        <nav>
+            <a href="./dashboard.html">Info armas</a>
+            <a href="./perfil.html">Perfil</a>
+            <a onclick="logOff()"><b>Sair</b></a>
+    </header>
+
+    <div class="titulo">
+        <h1> Ranking dos 5 melhores times Brasileiros</h1>
+    </div>
+
+    <div id="box_times">
+        <div id="time">
+            <section class="nome_logo">
+                <h4>1#</h4>
+                <img src="https://img-cdn.hltv.org/teamlogo/mvNQc4csFGtxXk5guAh8m1.svg?ixlib=java-2.1.0&s=11e5056829ad5d6c06c5961bbe76d20c" alt="">
+                <p>FURIA</p>
+            </section>
+            <div class="time_info" id="furia" style="display: none;">
+                <div class="time_fotos">
+                    <section>
+                        <p>arT</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/APsaniM__qNW2eJA4Of8wq.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=128%2C12%2C467%2C467&w=200&s=1989d63ddafb5c32da59e78603ad4fee" alt="">
+                    </section>
+                    <section>
+                        <p>yuurih</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/_I8K7JaFgC64cefe16uV8p.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=128%2C12%2C459%2C459&w=200&s=767cae7629c2914f7ebe29873f62c7cd" alt="">
+                    </section>
+                    <section>
+                        <p>KSCERATO</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/7UlnSQw1PMKkNuZjl16KSE.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C16%2C459%2C459&w=200&s=ae941208c64159efb10cb7fc07721d50" alt="">
+                    </section>
+                    <section>
+                        <p>saffee</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/oHD99ACgaCH8jpvcyTdKvx.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=128%2C8%2C455%2C455&w=200&s=3b61718e9522957cecebd7555ef2262e" alt="">
+                    </section>
+                    <section>
+                        <p>drop</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/WxZ-X7pAR6HAZNPspXM8No.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C8%2C467%2C467&w=200&s=cce8b4a5f94c106675476f040adf6414" alt="">
+                    </section>
+                </div>
+                <br>
+                <span><b>Técnico:</b> Guerri</span>
+            </div>
+        </div>
+
+        <div id="time">
+            <section class="nome_logo">
+                <h4>2#</h4>
+                <img src="https://img-cdn.hltv.org/teamlogo/WF5P55R5fxcmhoew6vHZQr.png?ixlib=java-2.1.0&w=50&s=ecc0a33173ed783477ab8be4cfa6e215" alt="">
+                <p>Imperial</p>
+            </section>
+            <div class="time_info" id="imperial">
+                <div class="time_fotos">
+                    <section>
+                        <p>fnx</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/BHpm88VLDHc3tC4XCaba99.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=140%2C19%2C451%2C451&w=200&s=2bbe03ff5c2dcbc0e837848faccacee6" alt="">
+                    </section>
+                    <section>
+                        <p>FalleN</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/Dygd2WfFl-F6yR_47baJcT.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=136%2C12%2C455%2C455&w=200&s=8fc0d80fb406be1e901701b68922d1df" alt="">
+                    </section>
+                    <section>
+                        <p>fer</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/0wByIKmMndjpZZS9V6_485.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=128%2C16%2C463%2C463&w=200&s=901a53cc859c04d1119bcc022532927c" alt="">
+                    </section>
+                    <section>
+                        <p>boltz</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/QIaoeHHlrC7MXCuRPxPMN7.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C12%2C467%2C467&w=200&s=58c5f8889eaf2613b1d14f3b15d8b273" alt="">
+                    </section>
+                    <section>
+                        <p>VINI</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/efj0WxAl9Hb8lEP5qCasoA.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=136%2C19%2C471%2C471&w=200&s=ec4930792c0ca4ba223f60dc6646ab5f" alt="">
+                    </section>
+                </div>
+                    <br>
+                    <span><b>Técnico:</b> Peacemaker</span>
+            </div>
+        </div>
+
+        <div id="time">
+            <section class="nome_logo">
+                <h4>3#</h4>
+                <img src="https://img-cdn.hltv.org/teamlogo/x7znFH8_QjLXOQRyR2y7Xp.png?ixlib=java-2.1.0&w=50&s=e4435bf7c351b546b867adc1d7886795" alt="">
+                <p>paiN</p>
+            </section>
+            <div class="time_info" id="pain">
+                <div class="time_fotos">
+                    <section>
+                        <p>PKL</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/iboFDqEUZ7XZoFhD7_OQjx.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=117%2C8%2C486%2C486&w=200&s=1fc876f6ee5023bda93d99419bcf93aa" alt="">
+                    </section>
+                    <section>
+                        <p>NEKIZ</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/aOGqgI8UVvTp-kPEuYVycL.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=132%2C8%2C478%2C478&w=200&s=74b351b3591cbbad20c22dcdfe8edfee" alt="">
+                    </section>
+                    <section>
+                        <p>hardzao</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/It9KqBEp-9FjkGm5OlFnZA.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C8%2C463%2C463&w=200&s=35210f86c90a40c6abfb0a1d3442434d" alt="">
+                    </section>
+                    <section>
+                        <p>biguzera</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/t9zs4p8ogm4_XnJspBgsbr.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=128%2C12%2C467%2C467&w=200&s=ae940f6c283ad8298ae21c9615d82f55" alt="">
+                    </section>
+                    <section>
+                        <p>nyton</p>
+                        <img src="https://img-cdn.hltv.org/playerbodyshot/HXRN7yuv7TVMIBHkrJ5t7m.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=113%2C4%2C490%2C490&w=200&s=6475939925a2aa0fdde2aad8105a149b" alt="">
+                    </section>
+                </div>
+                <br>
+                <span><b>Técnico:</b> rikz</span>
+            </div>
+        </div>
+    
+
+    <div id="time">
+        <section class="nome_logo">
+            <h4>4#</h4>
+            <img src="https://img-cdn.hltv.org/teamlogo/m_JQ624LNFHWiUY-25uuaE.png?ixlib=java-2.1.0&w=100&s=bbcc329085294daa8e8a7111850b331b" alt="">
+            <p>MIBR</p>
+        </section>
+        <div class="time_info" id="mibr">
+            <div class="time_fotos">
+                <section>
+                    <p>chelo</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/xssF4wAdaPITBA3UjL7_0Y.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=121%2C4%2C482%2C482&w=200&s=1e598e72213bca1dbbd1cbfcd6931318" alt="">
+                </section>
+                <section>
+                    <p>exit</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/C_3tqT1S9UTIIRdMBwhEKR.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=136%2C8%2C455%2C455&w=200&s=6cf0cdec51d1e16c5d9dabd2fd19948b" alt="">
+                </section>
+                <section>
+                    <p>Tuurtle</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/de89NzNQBXkOnHPQOACyOl.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=136%2C8%2C459%2C459&w=200&s=67fef569b5263a0cf8037d0f31495faf" alt="">
+                </section>
+                <section>
+                    <p>Jota</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/wxqCq_62lfKmPIy01pcq3M.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=132%2C4%2C459%2C459&w=200&s=a3615f33d5d502cdf6b63b7b99211adf" alt="">
+                </section>
+                <section>
+                    <p>brnZ4n</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/PAn9Jy0K87WQiOGwKHC55E.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=121%2C8%2C474%2C474&w=200&s=faea510b5e8286875f23902f63fa403f" alt="">
+                </section>
+            </div>
+            <br>
+            <span><b>Técnico:</b> BIT</span>
+        </div>
+    </div>
+
+    <div id="time">
+        <section class="nome_logo">
+            <h4>5#</h4>
+            <img src="https://img-cdn.hltv.org/teamlogo/WQl1L0NmsdhupV8S-fzQvA.svg?ixlib=java-2.1.0&s=7550f0c714f66781c2545e633ea582e2" alt="">
+            <p>GODSENT</p>
+        </section>
+        <div class="time_info" id="godsent">
+            <div class="time_fotos">    
+                <section>
+                    <p>HEN1</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/Fpqf9U811vPu2k3mqdwzGN.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=140%2C4%2C447%2C447&w=200&s=6e96b79324081e695ec5cd6071ef684f" alt="">
+                </section>
+                <section>
+                    <p>TACO</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/E1EkDs5r4nmoakZbA-lU5c.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=136%2C0%2C459%2C459&w=200&s=9c6077cd0e530256af936df17b89cc1f" alt="">
+                </section>
+                <section>
+                    <p>dumau</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/016-j7IgZpDZCjobB1eBBb.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=132%2C0%2C443%2C443&w=200&s=3d4a72284d41a10d7926669438eb38c8" alt="">
+                </section>
+                <section>
+                    <p>b4rtiN</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/wkwrvqxYYftJin3jQUa2m4.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=113%2C8%2C463%2C463&w=200&s=013366cda18f57294e12643c150c6bb5" alt="">
+                </section>
+                <section>
+                    <p>latto</p>
+                    <img src="https://img-cdn.hltv.org/playerbodyshot/kZYC8PntdHx_-HnR3eFwTY.png?bg=3e4c54&h=200&ixlib=java-2.1.0&rect=124%2C4%2C467%2C467&w=200&s=38d3dafd41e9f1aa994a394c049ab94a" alt="">
+                </section>
+            </div>
+        </div>
+        <br>
+        <span><b>Técnico:</b> chucky</span>
+    </div>
+</div>
+
+    <footer><p>© Todos direitos reservados ao CS:PEDIA</p></footer>
+</body>
+</html>
