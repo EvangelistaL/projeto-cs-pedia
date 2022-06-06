@@ -18,6 +18,7 @@
         <span>Bem vindo <b id="user_name">usuario</b></span>
         <nav>
             <a href="./dashboard.html">Info armas</a>
+            <a href="./ranking_times.html">Top 5 times</a>
             <a onclick="logOff()"><b>Sair</b></a>
     </header>
 
@@ -66,6 +67,11 @@
     }
 }
 
+function logOff() {
+    sessionStorage.clear();
+    window.location = "./login.html";
+}
+
     window.onload = function recomendacoes(){
         validarSessao()
         var indicacoes = document.getElementById("quantidade_indicado");
@@ -93,8 +99,8 @@
                             user_image.setAttribute('src', './imagens/silverIcon.png')
                             ranking.setAttribute('src', './imagens/prata_elite.jpg')
                             ranking_texto.innerHTML = 'Prata Elite'
-                        } else if(Number(json[0].Indicacoes) < 3){
-                            user_image.setAttribute('src', './imagens/goldIcon.jpg')
+                        } else if(Number(json[0].Indicacoes) >= 3){
+                            user_image.setAttribute('src', './imagens/goldIcon.png')
                             ranking.setAttribute('src', './imagens/ouro_mestre.jpg')
                             ranking_texto.innerHTML = 'Ouro mestre'
                         }else if (Number(json[0].Indicacoes) > 6) {

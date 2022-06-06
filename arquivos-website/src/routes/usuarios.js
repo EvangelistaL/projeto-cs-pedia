@@ -1,7 +1,5 @@
 var express = require("express");
 var router = express.Router();
-const multer = require("multer");
-const upload = multer({ dest: 'uploads/' })
 
 var usuarioController = require("../controllers/usuarioController");
 
@@ -21,9 +19,5 @@ router.post("/cadastrar", function (req, res) {
 router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
-
-router.post("/uploadImagem", upload.single("avatar"), function (req, res){
-    usuarioController.uparImagem(req, res);
-})
 
 module.exports = router;
