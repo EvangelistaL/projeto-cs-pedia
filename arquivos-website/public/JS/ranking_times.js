@@ -83,6 +83,13 @@ function votar(time){
 function mostrarGrafico(resposta){
     const grafico = document.getElementById('graficoDeVotos');
 
+    var votosTotais = Number(resposta[0].votos) + Number(resposta[1].votos) + Number(resposta[2].votos) + + Number(resposta[3].votos) + + Number(resposta[4].votos);
+    var votosFuria = (Number(resposta[0].votos) * 100) / votosTotais;
+    var votosImperial = (Number(resposta[1].votos) * 100) / votosTotais
+    var votosPain = (Number(resposta[2].votos) * 100) / votosTotais
+    var votosMibr = (Number(resposta[3].votos) * 100) / votosTotais
+    var votosGodsent = (Number(resposta[4].votos) * 100) / votosTotais
+    
     let donutChart = new Chart(grafico, {
         type: 'doughnut',
         data: {
@@ -90,13 +97,8 @@ function mostrarGrafico(resposta){
             datasets: [{
                 label: 'Votos',
                 backgroundColor: ['#001f52', '#45e50b', '#cc0000', '#0073ff', '#ffee00'],
-                data: []
+                data: [votosFuria, votosImperial, votosPain, votosMibr, votosGodsent]
             }]
         }
     }) 
-    donutChart.datasets[0].data.push(resposta[0].votos);
-    donutChart.datasets[1].data.push(resposta[1].votos);
-    donutChart.datasets[2].data.push(resposta[2].votos);
-    donutChart.datasets[3].data.push(resposta[3].votos);
-    donutChart.datasets[4].data.push(resposta[4].votos);
 }

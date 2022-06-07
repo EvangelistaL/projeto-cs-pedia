@@ -21,3 +21,7 @@ insert into times values (1, 'Furia'),
 create table voto_times (fkUsuario int, foreign key (fkUsuario) references usuarios (idUsuario),
 fkTime int, foreign key (fkTime) references times (idTime),
 voto int);
+
+select * from voto_times;
+
+select fkTime, sum(voto) as 'votos' from voto_times group by fkTime order by fkTime;
