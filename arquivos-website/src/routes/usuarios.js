@@ -7,6 +7,10 @@ router.get("/", function (req, res) {
     usuarioController.testar(req, res);
 });
 
+router.get("/graficoVotos", function (req, res) {
+    usuarioController.graficoVotos(req, res);
+});
+
 router.post("/listar", function (req, res) {
     usuarioController.listar(req, res);
 });
@@ -18,6 +22,10 @@ router.post("/cadastrar", function (req, res) {
 
 router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
+});
+
+router.post("/voto", function (req, res) {
+    usuarioController.votar(req, res);
 });
 
 module.exports = router;
