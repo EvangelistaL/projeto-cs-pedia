@@ -60,6 +60,7 @@ a {
     background-color: #0c0f123b;
     width: 85%;
     margin-left: 10%;
+    cursor: pointer;
 }
 
 #time .nome_logo{

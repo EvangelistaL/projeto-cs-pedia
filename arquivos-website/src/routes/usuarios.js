@@ -11,6 +11,10 @@ router.get("/graficoVotos", function (req, res) {
     usuarioController.graficoVotos(req, res);
 });
 
+router.get("/qtdCadastros", function (req, res) {
+    usuarioController.qtdCadastros(req, res);
+});
+
 router.post("/listar", function (req, res) {
     usuarioController.listar(req, res);
 });

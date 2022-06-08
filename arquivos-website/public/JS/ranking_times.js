@@ -44,7 +44,7 @@ function votar(time){
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            idUsuarioServer: 2,
+            idUsuarioServer: 1,
             idTimeServer: time,
         })
     }).then(function (resposta) {

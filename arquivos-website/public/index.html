@@ -23,10 +23,10 @@
     </header>
 
     <div id="imagem_inicial">
-            <div class="item"><img src="imagens/de_dust2.webp" alt=""></div>
-            <div class="item"><img src="imagens/de_mirage.jpg" alt=""></div>
+            <div class="item"><img src="imagens/de_dust2.webp" alt="" id="imagem_inicio"></div>
+            <!-- <div class="item"><img src="imagens/de_mirage.jpg" alt=""></div>
             <div class="item"><img src="imagens/de_nuke.webp" alt=""></div>
-            <div class="item"><img src="imagens/de_overpass.webp" alt=""></div>
+            <div class="item"><img src="imagens/de_overpass.webp" alt=""></div> -->
     </div>
     <section id="cspedia">
         <b>Se cadastre e tenha informações estátisticas sobre o jogo</b>
@@ -39,6 +39,7 @@
         <p>O CS:PEDIA é um site de informações sobre CS. Ao realizar o cadastro você terá acesso a informações estátisticas sobre
             as armas do jogo.
         </p>
+        <p>O CS:PEDIA possui <b id="cadastrados"></b> pessoas cadastradas</p>
     </div>
 
     <div id="box">
@@ -83,12 +84,35 @@
 </html>
 
 <script>
-    document.querySelector('#imagem_inicial').addEventListener('wheel',
-    event => {
-        if(event.deltaY > 0){
-            event.target.scrollBy(300, 0)
-        } else {
-            event.target.scrollBy(-300,0)
-        }
-    })
+    var imagens = ['imagens/de_mirage.jpg', './imagens/de_overpass.webp', './imagens/de_nuke.webp']
+    var carrosel = document.getElementById('imagem_inicio')
+
+    var x = 0
+    window.onload = setInterval(() => {
+            carrosel.setAttribute('src', imagens[x])
+            x++
+            if (x == imagens.length){
+                x = 0
+            }
+    }, 10000)
+
+    window.onload = function qtd_cadastros(){
+        fetch(`/usuarios/qtdCadastros`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    console.log(resposta.length)
+                    for(var x = 0; x < resposta.length; x++){
+                        cadastrados.innerHTML = `${x+1}`
+                    }
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
 </script>
